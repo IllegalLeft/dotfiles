@@ -1,0 +1,31 @@
+# Here are some examples of reasonable defaults:
+
+#OPTIONS=showexp,showscore,time,color,!autopickup
+#OPTIONS=autodig,fruit:slime mold,boulder:0
+
+# System
+#OPTIONS=windowtype:curses    <== Don't have :'(
+OPTIONS=number_pad:1
+OPTIONS=standout
+OPTIONS=suppress_alert:3.4.3
+
+# Names
+OPTIONS=name:Sam
+OPTIONS=catname:Sequoia,dogname:Peggy,horsename:Agro
+
+# Gameplay
+OPTIONS=autodig
+OPTIONS=autopickup,pickup_types:$="/!?
+OPTIONS=!fixinv
+
+#Graphics
+OPTIONS=boulder:0
+OPTIONS=color
+OPTIONS=hilite_pet
+OPTIONS=lit_corridor
+OPTIONS=showexp,showrace,showscore
+OPTIONS=windowcolors:menu white/black message green/yellow status white/blue text white/black
+
+# For more information on what you can set in your nethackrc file, refer to:
+#   http://www.nethack.org/v343/Guidebook.html#_TOCentry_42
+# Happy hacking!

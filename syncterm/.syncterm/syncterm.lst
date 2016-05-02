@@ -1,0 +1,461 @@
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+[Clutch BBS]
+	Address        =clutch.darktech.org
+	Port           =23
+	Added          =Feb 25 2014 12:58:39
+	LastConnected  =Apr  2 2016 10:53:08
+	TotalCalls     =88
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[Black Flag BBS]
+	Address        =blackflag.acid.org
+	Port           =23
+	Added          =Mar  8 2014 00:46:59
+	LastConnected  =Apr 16 2015 19:45:45
+	TotalCalls     =23
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[FatCatsBBS]
+	Address        =fatcatsbbs.com
+	Port           =23
+	Added          =Mar 22 2014 16:31:22
+	LastConnected  =Apr  2 2016 11:37:12
+	TotalCalls     =15
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[gukkmud]
+	Address        =84.202.115.109
+	Port           =6666
+	Added          =Apr 14 2014 16:18:52
+	LastConnected  =Apr 20 2014 16:34:35
+	TotalCalls     =4
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[Blood Island]
+	Address        =BLOODISLAND.PH4.SE
+	Port           =23
+	Added          =Apr 30 2014 22:44:22
+	LastConnected  =Feb 27 2015 21:56:14
+	TotalCalls     =4
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[CFBBS]
+	Address        =bbs.akroncdnr.com
+	Port           =23
+	Added          =May  3 2014 20:36:59
+	LastConnected  =May 17 2014 16:02:58
+	TotalCalls     =3
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[Black Flag BBS ASCII]
+	Address        =blackflag.acid.org
+	Port           =2425
+	Added          =May 12 2014 13:14:31
+	LastConnected  =Oct 23 2015 11:40:47
+	TotalCalls     =2
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[Haciend]
+	Address        =haciend.bbs.fi
+	Port           =23
+	Added          =May 21 2014 16:19:37
+	LastConnected  =Mar 14 2015 20:01:40
+	TotalCalls     =9
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[Cyberia]
+	Address        =cyberia.darktech.org
+	Port           =23
+	Added          =Jun 11 2014 20:32:20
+	LastConnected  =Oct 23 2015 11:35:33
+	TotalCalls     =26
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[Antishop]
+	Address        =garage.pwnz.org
+	Port           =23
+	Added          =Jun 21 2014 16:06:34
+	LastConnected  =Jun 21 2014 16:06:35
+	TotalCalls     =1
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[TooBBS]
+	Address        =70.78.2.127
+	Port           =23
+	Added          =Jul  5 2014 22:58:22
+	LastConnected  =Jul 12 2014 14:15:49
+	TotalCalls     =10
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[Black Flag BBS DayDream]
+	Address        =blackflag.acid.org
+	Port           =2627
+	Added          =Aug  4 2014 22:52:58
+	LastConnected  =Oct 23 2015 11:41:08
+	TotalCalls     =3
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[XTC BBS]
+	Address        =xtcbox.org
+	Port           =23
+	Added          =Sep  2 2014 16:04:30
+	LastConnected  =Oct 23 2015 11:40:19
+	TotalCalls     =10
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[SkullBase]
+	Address        =copyright.info.tm
+	Port           =2222
+	Added          =Sep  7 2014 13:35:36
+	LastConnected  =Apr 14 2015 21:50:21
+	TotalCalls     =13
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Raw
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[Shodan's Core]
+	Address        =shodan.synchro.net
+	Port           =23
+	Added          =Feb 13 2015 17:21:00
+	LastConnected  =Apr  3 2015 23:59:56
+	TotalCalls     =3
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[BlackICE]
+	Address        =BlackICE.BBSindex.com
+	Port           =23
+	Added          =Mar  3 2015 00:56:51
+	LastConnected  =Mar  3 2015 00:57:00
+	TotalCalls     =1
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[Dreamland]
+	Address        =dreamland.darktech.org
+	Port           =23
+	Added          =Mar  3 2015 22:57:10
+	LastConnected  =Oct 23 2015 11:30:58
+	TotalCalls     =9
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[localhost]
+	Address        =localhost
+	Port           =23
+	Added          =Mar  3 2015 23:40:29
+	LastConnected  =Mar  4 2015 01:27:20
+	TotalCalls     =2
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[Dark Sanctuary]
+	Address        =darksanctuary.darktech.org
+	Port           =23
+	Added          =Apr  3 2015 23:54:23
+	LastConnected  =Never
+	TotalCalls     =0
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
+
+
+[ElectronicChickenBBS]
+	Address        =bbs.electronicchicken.com
+	Port           =23
+	Added          =May 25 2015 16:14:30
+	LastConnected  =May 25 2015 16:21:05
+	TotalCalls     =2
+	UserName       =
+	Password       =
+	SystemPassword =
+	ConnectionType =Telnet
+	ScreenMode     =Current
+	NoStatus       =true
+	DownloadPath   =/home/sam/Downloads
+	UploadPath     =/home/sam/
+	LogFile        =
+	TransferLogLevel=Info
+	TelnetLogLevel =Info
+	AppendLogFile  =true
+	BPSRate        =0
+	ANSIMusic      =1
+	Font           =Codepage 437 English
