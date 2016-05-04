@@ -1,0 +1,45 @@
+#!/usr/bin/python3
+
+'''
+    PyMUSH
+
+    
+'''
+
+import select
+import sys
+import telnetlib
+import curses
+
+# Get server info:
+server = '8bit.fansi.org'
+port = 4201
+
+tn = telnetlib.Telnet(server,port)
+running = 1
+
+
+# modified Telnet.interact() code
+while 1:
+    rfd, wfd, xfd = select.select([tn, sys.stdin], [], [])
+    if tn in rfd:
+        try:
+            text = tn.read_eager()
+        except EOFError:
+            print('*** Connection closed by remote host ***')
+            break
+        if text:
+            sys.stdout.write(text.decode('cp437'))
+            sys.stdout.flush()
+    if sys.stdin in rfd:
+        line = sys.stdin.readline().encode('ascii')
+        if not line:
+            break
+        if line == "/quit\n":
+            break
+        tn.write(line)
+        #print("\x1b[33m" + line + "\x1b[0m")
+        #print(line)
+
+tn.close()
+exit()

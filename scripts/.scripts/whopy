@@ -1,0 +1,103 @@
+#!/usr/bin/python3
+
+"""
+
+8BitMUSH WHO
+
+Python 2.7
+
+Samuel Volk, March 2014
+
+"""
+
+import os
+import urllib.request
+import html.parser
+import re
+from time import gmtime, localtime, strftime
+
+# ANSI escape sequences
+CLR_RESET   = '\x1b[39;49m'
+BLACK       = '\x1b[30m'
+DARKRED     = '\x1b[31m'
+DARKGREEN   = '\x1b[32m'
+DARKYELLOW  = '\x1b[33m'
+DARKBLUE    = '\x1b[34m'
+DARKMAGENTA = '\x1b[35m'
+DARKCYAN    = '\x1b[36m'
+DARKWHITE   = '\x1b[37m'
+GREY        = '\x1b[30;1m'
+RED         = '\x1b[31;1m'
+GREEN       = '\x1b[32;1m'
+YELLOW      = '\x1b[33;1m'
+BLUE        = '\x1b[34;1m'
+MAGENTA     = '\x1b[35;1m'
+CYAN        = '\x1b[36;1m'
+WHITE       = '\x1b[37;1m'
+
+def timediff(struct_time):
+    epoch = gmtime(0)
+    for i in xrange(6):
+        struct_time = epoch - 1
+    return struct_time
+
+def timeconv(seconds):
+    seconds = int(seconds)
+    tstruct = gmtime(seconds)
+    # year
+    if not (tstruct[0]-1970) <= 0:
+        return str(tstruct[0]-1970) + 'y'
+    # months
+    elif not (tstruct[1]-1) <= 0:
+        return str(tstruct[1]-1) + 'M'
+    # day
+    elif not (tstruct[2]-1) <= 0:
+        return str(tstruct[2]-1) + 'd'
+    # hour
+    elif not (tstruct[3]-1) <= 0:
+        return str(tstruct[3]-1) + 'h'
+    # minutes
+    elif not (tstruct[4]-1) <= 0:
+        return str(tstruct[4]) + 'm'
+    # seconds
+    elif not (tstruct[5]-1) <= 0:
+        return str(tstruct[5]) + 's'
+    return '0s'
+	
+
+# Retrieve HTML
+response = urllib.request.urlopen('http://www.ansiart.com/Info/Who')
+htmldata = response.read().decode(encoding='UTF-8')
+# Remove everything other than the data
+matchobj = re.search('data-code="(.*?)">', htmldata, re.DOTALL)
+data = matchobj.group(1)
+
+# Handle some HTML crap
+# 
+# For some reason, &#8250; changes into the cent character on the actual page
+# but not here so it is manual replaced before.
+data = re.sub('&amp;#8250;', u'\u00A2', data)
+# Remove HTML entities
+h = html.parser.HTMLParser()
+data = h.unescape(data)
+data = h.unescape(data) # two times for good measure!
+data = re.sub('</*span.*?>', '', data)    #span tags suck
+
+	
+# Replace delimeters and format into an array
+data = data.split('\n')
+for i, item in enumerate(data):
+    data[i] = item.split('\t',3)
+
+
+# Format output
+print('Name'.ljust(12), 'Idle'.ljust(7), 'Connected'.ljust(7), 'Doing')
+for line in data:
+    print(CYAN, end='')
+    print(line[0].ljust(15)[:15], end='')            # Name
+    print(DARKGREEN, end='')
+    print(timeconv(line[1]).ljust(7), end='')   # Idle Time
+    print(timeconv(line[2]).ljust(7), end='')   # Connected Time
+    print(GREY, end='')
+    print(line[3].ljust(50), end='')            # Doing
+    print(CLR_RESET)

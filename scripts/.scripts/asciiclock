@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec watch -t -n 1 -c 'date +"%H : %M : %S" | figlet'
