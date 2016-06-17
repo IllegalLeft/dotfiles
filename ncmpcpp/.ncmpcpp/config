@@ -1,7 +1,16 @@
-# Directories
-mpd_music_dir = "/home/sam/Music/"
+# Controls
+mouse_support = "yes"
 
-progressbar_look = "▒▓"
+# Directories
+mpd_music_dir = "/home/sam/music/"
+
+# Look
+colors_enabled = "yes"
+progressbar_look = "━@⋅"
+user_interface = "alternative"
+playlist_display_mode = "columns"
+enable_window_title = "yes"
+display_remaining_time = "yes"
 
 # Visualizer
 visualizer_fifo_path = "/tmp/mpd.fifo"
@@ -10,17 +19,13 @@ visualizer_sync_interval = "30"
 visualizer_in_stereo = "no"
 ## fftw needed for spectrum
 visualizer_type = "ellipse" (spectrum/wave/wave_filled/ellipse)
-visualizer_look = "$|"
+visualizer_look = "█┃"
 
-ignore_leading_the = "yes"
-allow_for_physical_item_deletion = "yes"
-playlist_display_mode = "columns"
-mouse_support = "yes"
-enable_window_title = "yes"
-display_remaining_time = "yes"
-
-# editor
+# Editor
 external_editor = "vim"
 use_console_editor = "yes"
 
+# File Handling
 generate_win32_compatible_filenames = "yes"
+ignore_leading_the = "yes"
+allow_for_physical_item_deletion = "yes"
