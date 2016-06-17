@@ -1,5 +1,11 @@
-"" CUSTOM VIMRC
-""""""""""""""""
+"                  
+" $$$$  $$$$       
+"  $$   a$P        
+"  $$ ,$$'         
+"  $$a$P  *  $aaam
+"  $$$'   $  $ $ $
+"   ~              
+"                  
 
 " Plugins
 """"""""""
@@ -10,10 +16,11 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 " My Bundles here:
 " Cosmetic
+Plugin 'flazz/vim-colorschemes'         " colorschemes
 Plugin 'mhinz/vim-startify'             " start page
-Plugin 'vim-airline/vim-airline'        " status line
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'chriskempson/base16-vim'        " Base16 vim colorschemes
+"Plugin 'vim-airline/vim-airline'        " status line
+"Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'chriskempson/base16-vim'        " Base16 vim colorschemes
 " Syntax
 Plugin 'zaiste/tmux.vim'                " tmux syntax
 " Functionality
@@ -40,7 +47,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 " Set statusline always visible
-set laststatus=2
+set laststatus=0
 " Don't redraw the screen during macros
 set lazyredraw
 set mouse=a
@@ -93,11 +100,11 @@ set showmatch
 " Mappings
 """""""""""
 " Insert Movement - Ctrl + h/j/k/l
-noremap <C-h> <C-o>h
-inoremap <C-l> <C-o>a
-inoremap <C-j> <C-o>j
-inoremap <C-k> <C-o>k
-inoremap <C-^> <C-o><C-^>
+"noremap <C-h> <C-o>h
+"inoremap <C-l> <C-o>a
+"inoremap <C-j> <C-o>j
+"inoremap <C-k> <C-o>k
+"inoremap <C-^> <C-o><C-^>
 " Save - Leader + w
 noremap <Leader>w :update<CR>
 vnoremap <Leader>w <C-C>:update<CR>
@@ -135,31 +142,20 @@ noremap <Leader>0 <C-O>:buffer 10<CR>
 " Fugitive
 " map <Leader>g to enter git command
 noremap <Leader>g :Git<Space>
-vnoremap <Leader>g :Git<Space>
-inoremap <Leader>g :Git<Space>
 " map <Leader>gc to git commit
 noremap <Leader>gc :Gcommit<CR>
-vnoremap <Leader>gc :Gcommit<CR>
-inoremap <Leader>gc :Gcommit<CR>
 " map <Leader>gp to git pull
 noremap <Leader>gp :Gpull<CR>
-inoremap <Leader>gp :Gpull<CR>
-vnoremap <Leader>gp :Gpull<CR>
 " map <Leader>gs to git status
 noremap <Leader>gs :Gstatus<CR>
-vnoremap <Leader>gs :Gstatus<CR>
-inoremap <Leader>gs :Gstatus<CR>
 
 " NERDtree
 " map <Leader> + f to toggle
 noremap <Leader>f :NERDTreeToggle<CR>
-vnoremap <Leader>f <C-C>:NERDTreeToggle<CR>
-inoremap <Leader>f <C-O>:NERDTreeToggle<CR>
 
 " CtrlP
 " map <Leader> + b to search for buffers
 noremap <Leader>b :CtrlPBuffer<CR>
-
 
 " Functions
 """"""""""""
@@ -188,9 +184,10 @@ if ($TERM == "linux")
     color default
 " Regular terminal
 else
+    set fillchars=vert:│
     set t_Co=256
-    set background=dark
-    colorscheme base16-monokai
+    set background=light
+    colorscheme jellybeans
 endif
 
 
@@ -212,25 +209,27 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 
 
 " Startify
-hi StartifyHeader   ctermfg=034
-"let g:startify_custom_header = [
-"    \ '                  ',
-"    \ ' $$$$  $$$$       ',
-"    \ '  $$   a$P        ',
-"    \ '  $$ ,$$''         ',
-"    \ '  $$a$P  *  $+a+a ',
-"    \ '  $$$''   $  $ $ $ ',
-"    \ '   ~              ',
-"    \ '                  ',
-"    \ ]
+let g:startify_disable_at_vimenter = 0
+let g:startify_files_number = 10
+"hi StartifyHeader   ctermfg=034
+let g:startify_custom_header = [
+    \ '                  ',
+    \ ' $$$$  $$$$       ',
+    \ '  $$   a$P        ',
+    \ '  $$ ,$$''         ',
+    \ '  $$a$P  *  $+a+a ',
+    \ '  $$$''   $  $ $ $ ',
+    \ '   ~              ',
+    \ '                  ',
+    \ ]
 
 " CoVim
-let CoVim_default_name = "Sam"
+"let CoVim_default_name = "Sam"
 
 " Airline
 "let g:airline_theme = "powerlineish"
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_right_sep = ''
-let g:airline_left_sep = ''
-"let g:airline_symbols.linenr = ''
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline_left_sep = '»'
+"let g:airline_right_sep = '«'
+"let g:airline_symbols.linenr = '#'
 "let g:airline_symbols.whitespace = 'Ξ'

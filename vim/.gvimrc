@@ -2,9 +2,10 @@
 """""""""""""""""
 
 " Theme
-colorscheme base16-monokai
-set guifont=Terminus\ 12
+set bg=dark
+colorscheme jellybeans
+set guifont=Terminus\ 8
 
 " Airline
-"AirlineTheme papercolor
+AirlineTheme papercolor
 let g:airline_powerline_fonts = 1
