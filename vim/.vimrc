@@ -47,7 +47,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 " Set statusline always visible
-set laststatus=0
+set laststatus=1
 " Don't redraw the screen during macros
 set lazyredraw
 set mouse=a
