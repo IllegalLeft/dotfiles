@@ -1,19 +1,19 @@
 /* black */
 :root {
-    --black:    #2b303b;
-    --red:      #bf616a;
-    --green:    #a3be8c;
-    --yellow:   #ebcb8b;
-    --blue:     #8fa1b3;
-    --magenta:  #b48ead;
-    --cyan:     #96b5b4;
-    --white:    #c0c5ce;
+    --black:    #151515;
+    --red:      #d75f5f;
+    --green:    #87af5f;
+    --yellow:   #ffcc9a;
+    --blue:     #87afd7;
+    --magenta:  #8787af;
+    --cyan:     #5f8787;
+    --white:    #d7d7d7;
 
     --fg:       var(--white);
     --bg:       var(--black);
 
-    --bblack:   #65737e;
-    --bwhite:   #eff1f5;
+    --bblack:   #404040;
+    --bwhite:   #e8e8d3;
 }
 
 html, body, h1, ul, li, p {
