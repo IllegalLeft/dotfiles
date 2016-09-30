@@ -15,6 +15,7 @@ import urllib.request
 import html.parser
 import re
 from time import gmtime, localtime, strftime
+from operator import itemgetter
 
 # ANSI escape sequences
 CLR_RESET   = '\x1b[39;49m'
@@ -89,15 +90,18 @@ data = data.split('\n')
 for i, item in enumerate(data):
     data[i] = item.split('\t',3)
 
+# Sort by name
+data = sorted(data, key=lambda el: el[0].lower())
 
 # Format output
-print('Name'.ljust(12), 'Idle'.ljust(7), 'Connected'.ljust(7), 'Doing')
+print('Name'.ljust(14), 'Idle'.ljust(6), 'Connected'.ljust(6), 'Doing')
 for line in data:
     print(CYAN, end='')
-    print(line[0].ljust(15)[:15], end='')            # Name
-    print(DARKGREEN, end='')
-    print(timeconv(line[1]).ljust(7), end='')   # Idle Time
-    print(timeconv(line[2]).ljust(7), end='')   # Connected Time
+    print(line[0].ljust(15)[:15], end='')       # Name
+    print(GREEN, end='')
+    print(timeconv(line[2]).ljust(7), end='')   # Idle Time
+    print(BLUE, end='')
+    print(timeconv(line[1]).ljust(7), end='')   # Connected Time
     print(GREY, end='')
     print(line[3].ljust(50), end='')            # Doing
     print(CLR_RESET)
