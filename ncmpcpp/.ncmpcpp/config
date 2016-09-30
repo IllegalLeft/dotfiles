@@ -5,6 +5,7 @@ mouse_support = "yes"
 mpd_music_dir = "/home/sam/music/"
 
 # Look
+centered_cursor = "yes"
 colors_enabled = "yes"
 progressbar_look = "━@⋅"
 user_interface = "alternative"
