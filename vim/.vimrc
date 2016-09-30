@@ -67,6 +67,8 @@ set expandtab
 set tw=79 " used by gd(?)
 " Colour the 80th coloumn
 set colorcolumn=80
+" highlight cursour line
+set cursorline
 "highlight ColorColumn ctermbg=233
 " no wrap on load
 set nowrap

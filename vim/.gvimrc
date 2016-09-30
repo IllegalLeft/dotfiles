@@ -7,5 +7,5 @@ colorscheme jellybeans
 set guifont=Terminus\ 8
 
 " Airline
-AirlineTheme papercolor
-let g:airline_powerline_fonts = 1
+"AirlineTheme papercolor
+"let g:airline_powerline_fonts = 1
