@@ -6,7 +6,7 @@
 #(_)_.__/ \__,_|___/_| |_|_|  \___|
 #                                  
 # ~/.bashrc
-# Samuel Volk
+#
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

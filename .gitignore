@@ -1,4 +1,4 @@
-## vim stuff
+# vim stuff
 vim/.vim/bundle/*
 vim/.vim/session/*
 
@@ -16,3 +16,6 @@ weechat/.weechat/sec.conf
 weechat/.weechat/trigger.conf
 weechat/.weechat/weechat.log
 weechat/.weechat/xfer.conf
+
+# Misc
+scripts/.scripts/samlock

@@ -5,10 +5,9 @@
 | (_| | (_) | |_|  _| | |  __/\__ \
  \__,_|\___/ \__|_| |_|_|\___||___/
 ```
+*dotfiles*
 
-*dotfiles for Sam*
-
-Includes >>
+Includes:
 * bash
 * crawl
 * ncmpcpp
