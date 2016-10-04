@@ -1,0 +1,65 @@
+! = UXterm =
+!
+uxterm*termName: uxterm-256color
+xterm*termName:  xterm-256color
+
+xterm*foreground:  #FFFFFF
+xterm*background:  #000000
+uxterm*foreground:  #FFFFFF
+uxterm*background:  #000000
+
+xterm*faceName: xft:Px437 IBM VGA8:pixelsize=16
+
+xterm*allowBoldFonts: false
+
+! = URXVT =
+!
+urxvt.urgentOnBell: true
+urxvt.scrollBar: false
+urxvt.internalBorder: 0
+! Fonts
+urxvt.font: xft:{{ font }}::pixelsize={{ fontsize }}
+
+! Xft
+xft.dpi:        96
+xft.antialias:  true
+xft.rgba:       rgb
+xft.hinting:    true
+xft.hintstyle:  hintslight
+
+urxvt*.perl-ext-common : default,matcher
+urxvt*.url-launcher     : firefox
+urxvt*.matcher.button  : 1
+urxvt*.transparent: false
+! urxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+urxvt*.shading: 15
+
+!= COLORS =
+! Colors
+URxvt.borderColor:  {{ bgc }}
+URxvt.background:   {{ bgc }}
+URxvt.foreground:   {{ fgc }}
+! Black
+URxvt.color0:       {{ n_black }}
+URxvt.color8:       {{ b_black }}
+! Red
+URxvt.color1:       {{ n_red }}
+URxvt.color9:       {{ b_red }}
+! Green
+URxvt.color2:       {{ n_green }}
+URxvt.color10:      {{ b_green }}
+! Yellow
+URxvt.color3:       {{ n_yellow }}
+URxvt.color11:      {{ b_yellow }}
+! Blue
+URxvt.color4:       {{ n_blue }}
+URxvt.color12:      {{ b_blue }}
+! Magenta
+URxvt.color5:       {{ n_magenta }}
+URxvt.color13:      {{ b_magenta }}
+! Cyan
+URxvt.color6:       {{ n_cyan }}
+URxvt.color14:      {{ b_cyan }}
+! White
+URxvt.color7:       {{ n_white }}
+URxvt.color15:      {{ b_white }}

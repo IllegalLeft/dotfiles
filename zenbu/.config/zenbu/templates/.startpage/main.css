@@ -1,21 +1,21 @@
 /* black */
 :root {
-    --black:    #353540;
-    --bblack:   #545466;
-    --red:      #aa706b;
-    --bred:     #d28a84;
-    --green:    #aaaa76;
-    --bgreen:   #d2d291;
-    --yellow:   #c8b8a1;
-    --byellow:  #f0dcc1;
-    --blue:     #87aaa6;
-    --bblue:    #a6d2cd;
-    --magenta:  #7cb6c8;
-    --bmagenta: #94daf0;
-    --cyan:     #82aa88;
-    --bcyan:    #a0d2a8;
-    --white:    #d8d8d8;
-    --bwhite:   #eaeaea;
+    --black:    {{ n_black }};
+    --bblack:   {{ b_black }};
+    --red:      {{ n_red }};
+    --bred:     {{ b_red }};
+    --green:    {{ n_green }};
+    --bgreen:   {{ b_green }};
+    --yellow:   {{ n_yellow }};
+    --byellow:  {{ b_yellow }};
+    --blue:     {{ n_blue }};
+    --bblue:    {{ b_blue }};
+    --magenta:  {{ n_magenta }};
+    --bmagenta: {{ b_magenta }};
+    --cyan:     {{ n_cyan }};
+    --bcyan:    {{ b_cyan }};
+    --white:    {{ n_white }};
+    --bwhite:   {{ b_white }};
 
     --fg:       var(--white);
     --bg:       var(--black);
