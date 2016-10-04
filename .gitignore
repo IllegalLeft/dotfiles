@@ -19,3 +19,5 @@ weechat/.weechat/xfer.conf
 
 # Misc
 scripts/.scripts/samlock
+*.pyc
+*/__pycahce__/
