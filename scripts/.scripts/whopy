@@ -93,14 +93,14 @@ for i, item in enumerate(data):
 data.sort(key=lambda x: int(x[2]))
 
 # Format output
-print('Name'.ljust(12), 'Connected'.ljust(9), 'Idle'.ljust(9), 'Doing')
+print('Name'.ljust(12), 'On'.ljust(4), 'Idl'.ljust(4), 'Doing')
 for line in data:
     print(CYAN, end='')
     print(line[0].ljust(13)[:13], end='')           # Name
     print(DARKGREEN, end='')
-    print(timeconv(line[1]).ljust(11), end='')      # Connected Time
+    print(timeconv(line[1]).ljust(5), end='')      # Connected Time
     print(DARKBLUE, end='')
-    print(timeconv(line[2]).ljust(10), end='')      # Idle Time
+    print(timeconv(line[2]).ljust(5), end='')      # Idle Time
     print(GREY, end='')
     print(line[3].ljust(50), end='')                # Doing
     print(CLR_RESET)
