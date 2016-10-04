@@ -93,7 +93,7 @@ for i, item in enumerate(data):
 data.sort(key=lambda x: int(x[2]))
 
 # Format output
-print('Name'.ljust(12), 'Connected'.ljust(10), 'Idle'.ljust(9), 'Doing')
+print('Name'.ljust(12), 'Connected'.ljust(9), 'Idle'.ljust(9), 'Doing')
 for line in data:
     print(CYAN, end='')
     print(line[0].ljust(13)[:13], end='')           # Name
