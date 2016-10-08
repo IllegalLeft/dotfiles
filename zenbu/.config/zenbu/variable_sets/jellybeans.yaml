@@ -1,0 +1,29 @@
+colors: 
+    primary:    "blue"
+    secondary:  "green"
+    background: "#151515"
+    foreground: "#e8e8d3"
+    black:
+        normal: "#151515"
+        bold:   "#404040"
+    red:
+        normal: "#d75f5f"
+        bold:   "#ea8484"
+    green:
+        normal: "#87af5f"
+        bold:   "#c7f09f"
+    yellow:
+        normal: "#ffaf5f"
+        bold:   "#ffcc9a"
+    blue:
+        normal: "#87afd7"
+        bold:   "#a5caef"
+    magenta:
+        normal: "#8787af"
+        bold:   "#a6a6de"
+    cyan:
+        normal: "#5f8787"
+        bold:   "#69b2b2"
+    white:
+        normal: "#d7d7d7"
+        bold:   "#e8e8d3"

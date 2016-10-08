@@ -1,14 +1,14 @@
 colors:
     primary:    "cyan"
-    secondary:  "blue"
+    secondary:  "green"
     background: "#141414"
     foreground: "#b6b6b6"
     black:
         normal: "#141414"
         bold:   "#333333"
     red:
-        normal: "#4d2009"
-        bold:   "#662a0c"
+        normal: "#592409"
+        bold:   "#71260b"
     green:
         normal: "#515949"
         bold:   "#69735e"
@@ -16,8 +16,8 @@ colors:
         normal: "#594c2d"
         bold:   "#73623a"
     blue:
-        normal: "#323965"
-        bold:   "#3f4880"
+        normal: "#363f56"
+        bold:   "#475371"
     magenta:
         normal: "#631b4f"
         bold:   "#7d2263"

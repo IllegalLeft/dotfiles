@@ -31,3 +31,6 @@ export PATH="${PATH}:/home/sam/games/"
 # devkit
 export DEVKITPRO=/opt/devkitpro
 export DEVKITARM=/opt/devkitpro/devkitARM
+
+# Rhisk
+export RHISK_COMM="zenbu"

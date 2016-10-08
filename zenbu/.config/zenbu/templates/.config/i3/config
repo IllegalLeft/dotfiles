@@ -125,10 +125,10 @@ bindsym $mod+Shift+r restart
 
 # colors
 # class                 border  backgr. text    indicator   child_border
-client.focused          {{ b_primary }} {{ b_primary }} {{ n_black }} {{ b_secondary }} {{ n_black }}
-client.focused_inactive {{ n_primary }} {{ n_primary }} {{ n_white }} {{ n_secondary }} {{ n_black }}
-client.unfocused        {{ n_primary }} {{ n_primary }} {{ n_white }} {{ n_secondary }} {{ n_black }}
-client.urgent           {{ n_red }} {{ n_red }} {{ n_black }} {{ b_red }} {{ n_black }}
+client.focused          {{ b_primary }} {{ b_primary }} {{ n_black }} {{ n_white }} {{ b_primary }}
+client.focused_inactive {{ b_primary }} {{ b_primary }} {{ n_white }} {{ n_primary }} {{ b_primary }}
+client.unfocused        {{ n_primary }} {{ n_primary }} {{ n_white }} {{ n_primary }} {{ n_primary }}
+client.urgent           {{ n_red }} {{ n_red }} {{ n_black }} {{ n_red }} {{ n_red }}
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
