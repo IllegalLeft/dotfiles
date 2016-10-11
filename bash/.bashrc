@@ -1,4 +1,3 @@
-
 #   _               _              
 #  | |__   __ _ ___| |__  _ __ ___ 
 #  | '_ \ / _` / __| '_ \| '__/ __|
@@ -11,6 +10,12 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# arch pkgfile command-not-found hook
+source /usr/share/doc/pkgfile/command-not-found.bash
+
+# line wrap on window resize
+shopt -s checkwinsize
+
 # Aliases
 alias ls='ls --color=auto'
 alias ex='vim -e'
@@ -22,7 +27,7 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # PS1
-PS1='[\e[1;32m\u\e[0m@\e[0;32m\h \e[1;32m\W\e[0m]\$ '
+PS1='[\[\e[1;32m\]\u\[\e[0m\]@\[\e[0;32m\]\h \[\e[1;32m\]\W\[\e[0m\]]\$ '
 
 # PATH
 export PATH="${PATH}:/home/sam/.scripts"
