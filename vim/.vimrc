@@ -25,7 +25,7 @@ Plugin 'zaiste/tmux.vim'                " tmux syntax
 " Functionality
 "Plugin 'FredKSchott/CoVim'	            " collaborative editing
 Plugin 'tpope/vim-fugitive'		        " git commands inside vim
-Plugin 'scrooloose/nerdtree'	        " filebrowser
+"Plugin 'scrooloose/nerdtree'	        " filebrowser
 Plugin 'ctrlpvim/ctrlp.vim'             " fuzzy search
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -150,9 +150,10 @@ noremap <Leader>gp :Gpull<CR>
 " map <Leader>gs to git status
 noremap <Leader>gs :Gstatus<CR>
 
-" NERDtree
+" netwr & NERDtree
 " map <Leader> + f to toggle
-noremap <Leader>f :NERDTreeToggle<CR>
+"noremap <Leader>f :NERDTreeToggle<CR>
+noremap <Leader>f :Vexplore<CR>
 
 " CtrlP
 " map <Leader> + b to search for buffers
@@ -209,6 +210,21 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 "au BufRead,BufNewFile *.mush set filetype=mushcode
 
 
+" Airline
+"let g:airline_theme = "powerlineish"
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline_left_sep = '»'
+"let g:airline_right_sep = '«'
+"let g:airline_symbols.linenr = '#'
+"let g:airline_symbols.whitespace = 'Ξ'
+
+" CoVim
+"let CoVim_default_name = "Sam"
+
+" netwr
+let g:netwr_liststyle = 3
+let g:netwr_banner = 0
+
 " Startify
 let g:startify_disable_at_vimenter = 0
 let g:startify_files_number = 10
@@ -223,14 +239,3 @@ let g:startify_custom_header = [
     \ '   ~              ',
     \ '                  ',
     \ ]
-
-" CoVim
-"let CoVim_default_name = "Sam"
-
-" Airline
-"let g:airline_theme = "powerlineish"
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline_left_sep = '»'
-"let g:airline_right_sep = '«'
-"let g:airline_symbols.linenr = '#'
-"let g:airline_symbols.whitespace = 'Ξ'
