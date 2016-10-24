@@ -1,6 +1,7 @@
 # vim stuff
 vim/.vim/bundle/*
 vim/.vim/session/*
+vim/.vim/.netrwhist
 
 # weechat stuff
 weechat/.weechat/logs/*
