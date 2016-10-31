@@ -11,6 +11,7 @@
 set bg=dark
 colorscheme jellybeans
 set guifont=Terminus\ 8
+    set fillchars=vert:│
 
 " Airline
 "AirlineTheme papercolor

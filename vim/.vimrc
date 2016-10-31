@@ -15,7 +15,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 " My Bundles here:
 " Cosmetic
-Plugin 'flazz/vim-colorschemes'         " colorschemes
+"Plugin 'flazz/vim-colorschemes'         " colorschemes
 Plugin 'mhinz/vim-startify'             " start page
 "Plugin 'vim-airline/vim-airline'        " status line
 "Plugin 'vim-airline/vim-airline-themes'
@@ -67,7 +67,7 @@ set tw=79 " used by gd(?)
 " Colour the 80th coloumn
 set colorcolumn=80
 " highlight cursour line
-set cursorline
+"set cursorline
 "highlight ColorColumn ctermbg=233
 " no wrap on load
 set nowrap
@@ -180,7 +180,7 @@ endfunc
 
 " Theme
 """"""""
-let base16colorspace=256  " Access colors present in 256 colorspace
+"let base16colorspace=256  " Access colors present in 256 colorspace
 " TTY
 if ($TERM == "linux")
     color default
@@ -188,8 +188,8 @@ if ($TERM == "linux")
 else
     set fillchars=vert:│
     set t_Co=256
-    set background=light
-    colorscheme jellybeans
+    set background=dark
+    colorscheme badwolf
 endif
 
 
