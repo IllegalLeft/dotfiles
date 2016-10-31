@@ -1,7 +1,7 @@
 color={{ fgc }}
 
 [mpd]
-command=mpc | sed -n 1p
+command=mpc current
 interval=1
 color={{ n_secondary }}
 
