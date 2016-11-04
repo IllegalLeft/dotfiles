@@ -1,11 +1,11 @@
-"       _                    
-"__   _(_)_ __ ___  _ __ ___ 
+"       _
+"__   _(_)_ __ ___  _ __ ___
 "\ \ / / | '_ ` _ \| '__/ __|
-" \ V /| | | | | | | | | (__ 
+" \ V /| | | | | | | | | (__
 "(_)_/ |_|_| |_| |_|_|  \___|
 " .vimrc
 "
-                            
+
 " Plugins
 """"""""""
 " set the runtime path to include Vundle and initialize
@@ -49,13 +49,12 @@ set noswapfile
 set laststatus=1
 " Don't redraw the screen during macros
 set lazyredraw
-set mouse=a
 
 
 " Editor
 """""""""
 " Enable mouse
-"set mouse=a
+set mouse=a
 " tabstop
 set tabstop=4
 set softtabstop=4
@@ -63,7 +62,7 @@ set shiftwidth=4
 set shiftround
 set expandtab
 " Line length to 79 chars
-set tw=79 " used by gd(?)
+set textwidth=79 " used by gd(?)
 " Colour the 80th coloumn
 set colorcolumn=80
 " highlight cursour line
@@ -80,6 +79,12 @@ set hidden
 " command autocomplete like shell
 set wildmenu
 set wildmode=list:longest
+" ignore some files vim has no use to edit
+set wildignore+=*.dll,*.msi
+set wildignore+=*.o,*.exe
+set wildignore+=*.ape,*.flac,*.mp3,*.ogg,*.wav
+set wildignore+=*.mp4,*.mpeg,*.webm
+set wildignore+=*.gz,*.tar,*.tar.gz,*.zip
 " ruler/status line
 set ruler
 " Set history & undo history limits
@@ -163,18 +168,18 @@ noremap <Leader>b :CtrlPBuffer<CR>
 """"""""""""
 " MUSHcode shrink - Leader + r
 function! MUSHcodeShrink()
-  %s/\r\|\t\|\n\|\s\s\+//g   " remove \r, \t, \n, and multiple \s (2 or more)
-  %y+
-  undo
-  nohl
+    %s/\r\|\t\|\n\|\s\s\+//g   " remove \r, \t, \n, and multiple \s (2 or more)
+    %y+
+    undo
+    nohl
 endfunction
 noremap <silent> <Leader>r :call MUSHcodeShrink()<CR>
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 function! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
+    exe "normal mz"
+    %s/\s\+$//ge
+    exe "normal `z"
 endfunc
 
 
