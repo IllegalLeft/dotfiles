@@ -16,7 +16,7 @@ xterm*allowBoldFonts: false
 !
 urxvt.urgentOnBell: true
 urxvt.scrollBar: false
-urxvt.internalBorder: 0
+urxvt.internalBorder: 5
 ! Fonts
 urxvt.font: xft:{{ font }}::pixelsize={{ fontsize }}
 
