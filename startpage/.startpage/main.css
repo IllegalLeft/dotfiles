@@ -1,9 +1,38 @@
+@font-face {
+    font-family: 'px437_ibm_vga8regular';
+    src: url('fonts/px437_ibm_vga8-webfont.woff2') format('woff2'),
+         url('fonts/px437_ibm_vga8-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'px437_ati_8x8regular';
+    src: url('fonts/px437_ati_8x8-webfont.woff2') format('woff2'),
+         url('fonts/px437_ati_8x8-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pxplus_ibm_vga8regular';
+    src: url('fonts/pxplus_ibm_vga8-webfont.woff2') format('woff2'),
+         url('fonts/pxplus_ibm_vga8-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'px437_ati_8x16regular';
+    src: url('fonts/px437_ati_8x16-webfont.woff2') format('woff2'),
+         url('fonts/px437_ati_8x16-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body, h1, ul, li, p {
   margin: 0;
   padding: 0; }
 
 body {
-  background: #101015;
+  background: #272727;
   height: 100vh;
   width: 100vw; }
 
@@ -19,43 +48,59 @@ main {
     left: 40%;
     transform: translate(-40%, -60%); } }
 h1 {
-  color: #818adc;
-  font-family: "Liberation Serif";
-  font-size: 3em; }
+  color: #a6d2cd;
+  font-family: "pxplus_ibm_vga8regular","Liberation Serif";
+  font-size: 16px;
+  font-weight: normal; 
+  margin: 15px; }
 
 p {
-  color: #fafafa;
-  font-family: "Arial";
-  font-size: 1em; }
+  color: #a6d2cd;
+  font-family: "terminus", "pxplus_ibm_vga8regular","Arial";
+  font-size: 12px;
+  letter-spacing: 0px;
+  line-height: 12px; }
 
 code {
-  font-family: "Arial";
-  font-size: 1em; }
+  font-family: "pxplus_ibm_vga8regular","Arial";
+  font-size: 16px; }
 
 ul {
   display: block;
   margin: 0 auto; }
 
 li {
-  display: inline-block;
-  font-family: "Liberation Serif";
-  font-size: 1em;
+  font-family: "pxplus_ibm_vga8regular","Liberation Serif";
+  font-size: 16px;
   line-height: 1.5;
   list-style: none;
   margin: 0 5px; }
 
+.ansi {
+  font-family: "pxplus_ibm_vga8regular";
+  font-size: 16px;
+  font-weight: normal; }
+
+.boxes {
+  margin-left: 40px}
+.box {
+  float: left;
+  margin: 10px;
+  transition: .2s; }
+.box:hover {
+  background-color: #545466; }
+
 .subh {
-  color: #db9fbb;
-  font-weight: bold;
+  color: #d28a84;
   margin-top: 5px;
   text-decoration: none;
   transition: .2s; }
 
 .subh:hover {
-  color: #a97b91; }
+  color: #aa706b; }
 
 a {
-  color: #646baa;
+  color: #87aaa6;
   text-decoration: none;
   transition: .2s; }
 
@@ -69,12 +114,12 @@ a:hover {
   color: #d8d8d8; }
 
 .searchfield {
-  background: #303035;
+  background: #545466;
   color: #eaeaea;
   border: none;
   display: block;
-  font-family: "Liberation Serif",Helvetica,Arial,sans-serif;
-  font-size: .9em;
+  font-family: "pxplus_ibm_vga8regular","Liberation Serif",Helvetica,Arial,sans-serif;
+  font-size: 16px;
   height: 25px;
   margin: 10px auto;
   padding: 5px 0 5px 10px;
