@@ -1,3 +1,32 @@
+@font-face {
+    font-family: 'px437_ibm_vga8regular';
+    src: url('fonts/px437_ibm_vga8-webfont.woff2') format('woff2'),
+         url('fonts/px437_ibm_vga8-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'px437_ati_8x8regular';
+    src: url('fonts/px437_ati_8x8-webfont.woff2') format('woff2'),
+         url('fonts/px437_ati_8x8-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pxplus_ibm_vga8regular';
+    src: url('fonts/pxplus_ibm_vga8-webfont.woff2') format('woff2'),
+         url('fonts/pxplus_ibm_vga8-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'px437_ati_8x16regular';
+    src: url('fonts/px437_ati_8x16-webfont.woff2') format('woff2'),
+         url('fonts/px437_ati_8x16-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body, h1, ul, li, p {
   margin: 0;
   padding: 0; }
@@ -20,33 +49,49 @@ main {
     transform: translate(-40%, -60%); } }
 h1 {
   color: {{ b_primary }};
-  font-family: "Liberation Serif";
-  font-size: 3em; }
+  font-family: "pxplus_ibm_vga8regular","Liberation Serif";
+  font-size: 16px;
+  font-weight: normal; 
+  margin: 15px; }
 
 p {
-  color: {{ fgc }};
-  font-family: "Arial";
-  font-size: 1em; }
+  color: {{ b_primary }};
+  font-family: "terminus", "pxplus_ibm_vga8regular","Arial";
+  font-size: 12px;
+  letter-spacing: 0px;
+  line-height: 12px; }
 
 code {
-  font-family: "Arial";
-  font-size: 1em; }
+  font-family: "pxplus_ibm_vga8regular","Arial";
+  font-size: 16px; }
 
 ul {
   display: block;
   margin: 0 auto; }
 
 li {
-  display: inline-block;
-  font-family: "Liberation Serif";
-  font-size: 1em;
+  font-family: "pxplus_ibm_vga8regular","Liberation Serif";
+  font-size: 16px;
   line-height: 1.5;
   list-style: none;
   margin: 0 5px; }
 
+.ansi {
+  font-family: "pxplus_ibm_vga8regular";
+  font-size: 16px;
+  font-weight: normal; }
+
+.boxes {
+  margin-left: 40px}
+.box {
+  float: left;
+  margin: 10px;
+  transition: .2s; }
+.box:hover {
+  background-color: {{ b_black }}; }
+
 .subh {
   color: {{ b_secondary }};
-  font-weight: bold;
   margin-top: 5px;
   text-decoration: none;
   transition: .2s; }
@@ -73,8 +118,8 @@ a:hover {
   color: {{ b_white }};
   border: none;
   display: block;
-  font-family: "Liberation Serif",Helvetica,Arial,sans-serif;
-  font-size: .9em;
+  font-family: "pxplus_ibm_vga8regular","Liberation Serif",Helvetica,Arial,sans-serif;
+  font-size: 16px;
   height: 25px;
   margin: 10px auto;
   padding: 5px 0 5px 10px;
