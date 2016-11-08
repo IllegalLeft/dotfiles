@@ -49,6 +49,8 @@ set noswapfile
 set laststatus=1
 " Don't redraw the screen during macros
 set lazyredraw
+" fast terminal connection
+set ttyfast
 
 
 " Editor
@@ -188,7 +190,7 @@ endfunc
 "let base16colorspace=256  " Access colors present in 256 colorspace
 " TTY
 if ($TERM == "linux")
-    color default
+    color simp16
 " Regular terminal
 else
     set fillchars=vert:│
