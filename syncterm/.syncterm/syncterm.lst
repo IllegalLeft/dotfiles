@@ -5,8 +5,8 @@
 	Address        =clutch.darktech.org
 	Port           =23
 	Added          =Feb 25 2014 12:58:39
-	LastConnected  =Oct 18 2016 15:07:14
-	TotalCalls     =106
+	LastConnected  =Nov  7 2016 11:00:34
+	TotalCalls     =112
 	UserName       =
 	Password       =
 	SystemPassword =
@@ -28,8 +28,8 @@
 	Address        =blackflag.acid.org
 	Port           =23
 	Added          =Mar  8 2014 00:46:59
-	LastConnected  =Oct 18 2016 15:57:00
-	TotalCalls     =26
+	LastConnected  =Oct 28 2016 19:58:15
+	TotalCalls     =27
 	UserName       =
 	Password       =
 	SystemPassword =
@@ -51,8 +51,8 @@
 	Address        =fatcatsbbs.com
 	Port           =23
 	Added          =Mar 22 2014 16:31:22
-	LastConnected  =Jul 10 2016 15:52:38
-	TotalCalls     =17
+	LastConnected  =Nov  4 2016 21:16:12
+	TotalCalls     =18
 	UserName       =
 	Password       =
 	SystemPassword =
@@ -99,29 +99,6 @@
 	Added          =Apr 30 2014 22:44:22
 	LastConnected  =Feb 27 2015 21:56:14
 	TotalCalls     =4
-	UserName       =
-	Password       =
-	SystemPassword =
-	ConnectionType =Telnet
-	ScreenMode     =Current
-	NoStatus       =true
-	DownloadPath   =/home/sam/Downloads
-	UploadPath     =/home/sam/
-	LogFile        =
-	TransferLogLevel=Info
-	TelnetLogLevel =Info
-	AppendLogFile  =true
-	BPSRate        =0
-	ANSIMusic      =1
-	Font           =Codepage 437 English
-
-
-[CFBBS]
-	Address        =bbs.akroncdnr.com
-	Port           =23
-	Added          =May  3 2014 20:36:59
-	LastConnected  =May 17 2014 16:02:58
-	TotalCalls     =3
 	UserName       =
 	Password       =
 	SystemPassword =
@@ -189,8 +166,8 @@
 	Address        =cyberia.darktech.org
 	Port           =23
 	Added          =Jun 11 2014 20:32:20
-	LastConnected  =Jul 10 2016 15:45:37
-	TotalCalls     =34
+	LastConnected  =Nov  4 2016 21:40:50
+	TotalCalls     =37
 	UserName       =
 	Password       =
 	SystemPassword =
@@ -254,35 +231,12 @@
 	Font           =Codepage 437 English
 
 
-[XTC BBS]
-	Address        =xtcbox.org
-	Port           =23
-	Added          =Sep  2 2014 16:04:30
-	LastConnected  =Jun 17 2016 16:15:44
-	TotalCalls     =11
-	UserName       =
-	Password       =
-	SystemPassword =
-	ConnectionType =Telnet
-	ScreenMode     =Current
-	NoStatus       =true
-	DownloadPath   =/home/sam/Downloads
-	UploadPath     =/home/sam/
-	LogFile        =
-	TransferLogLevel=Info
-	TelnetLogLevel =Info
-	AppendLogFile  =true
-	BPSRate        =0
-	ANSIMusic      =1
-	Font           =Codepage 437 English
-
-
 [SkullBase]
 	Address        =copyright.info.tm
 	Port           =2222
 	Added          =Sep  7 2014 13:35:36
-	LastConnected  =Jun 17 2016 16:16:04
-	TotalCalls     =14
+	LastConnected  =Nov  4 2016 21:47:47
+	TotalCalls     =15
 	UserName       =
 	Password       =
 	SystemPassword =
@@ -350,8 +304,8 @@
 	Address        =dreamland.darktech.org
 	Port           =23
 	Added          =Mar  3 2015 22:57:10
-	LastConnected  =Jul 10 2016 15:45:45
-	TotalCalls     =14
+	LastConnected  =Nov  4 2016 21:46:19
+	TotalCalls     =16
 	UserName       =
 	Password       =
 	SystemPassword =
@@ -388,29 +342,6 @@
 	TelnetLogLevel =Info
 	AppendLogFile  =true
 	BPSRate        =9600
-	ANSIMusic      =1
-	Font           =Codepage 437 English
-
-
-[Dark Sanctuary]
-	Address        =darksanctuary.darktech.org
-	Port           =23
-	Added          =Apr  3 2015 23:54:23
-	LastConnected  =Never
-	TotalCalls     =0
-	UserName       =
-	Password       =
-	SystemPassword =
-	ConnectionType =Telnet
-	ScreenMode     =Current
-	NoStatus       =true
-	DownloadPath   =/home/sam/Downloads
-	UploadPath     =/home/sam/
-	LogFile        =
-	TransferLogLevel=Info
-	TelnetLogLevel =Info
-	AppendLogFile  =true
-	BPSRate        =0
 	ANSIMusic      =1
 	Font           =Codepage 437 English
 
