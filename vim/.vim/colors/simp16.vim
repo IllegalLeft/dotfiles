@@ -21,7 +21,7 @@ let g:colors_name = "simp16"
 
 " Vim
 hi Normal       cterm=NONE      ctermfg=LightGrey  ctermbg=Black
-hi ModeMsg      ctermfg=Blue    ctermbg=NONE
+hi ModeMsg      ctermfg=White   ctermbg=NONE
 " Cursor
 hi Cursor       cterm=NONE      ctermfg=bg          ctermbg=fg
 hi lCursor      cterm=NONE      ctermfg=NONE        ctermbg=Cyan
@@ -58,7 +58,7 @@ hi WildMenu     cterm=NONE          ctermfg=Black       ctermbg=DarkGrey
 
 " Syntax
 hi Comment      cterm=NONE      ctermfg=DarkGrey       
-hi Constant     cterm=NONE      ctermfg=DarkBlue
+hi Constant     cterm=NONE      ctermfg=White
 hi Identifier   cterm=NONE      ctermfg=NONE
 hi PreProc      cterm=NONE      ctermfg=NONE
 hi Special      cterm=NONE      ctermfg=NONE
