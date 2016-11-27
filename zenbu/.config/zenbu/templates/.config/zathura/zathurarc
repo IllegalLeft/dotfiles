@@ -1,0 +1,45 @@
+#          _   _                              
+# ______ _| |_| |__  _   _ _ __ __ _ _ __ ___ 
+#|_  / _` | __| '_ \| | | | '__/ _` | '__/ __|
+# / / (_| | |_| | | | |_| | | | (_| | | | (__ 
+#/___\__,_|\__|_| |_|\__,_|_|  \__,_|_|  \___|
+#zathurarc
+
+# Font
+set font "{{ font }} {{ fontsize }}"
+
+# Colors
+set completion-fg "{{ fgc }}"
+set completion-bg "{{ n_black }}"
+set completion-group-fg "{{ n_secondary }}"
+set completion-group-bg "{{ bgc }}"
+set completion-highlight-fg "{{ bgc }}"
+set completion-highlight-bg "{{ b_primary }}"
+set default-fg "{{ fgc }}"
+set default-bg "{{ bgc }}"
+set inputbar-fg "{{ fgc }}"
+set inputbar-bg "{{ n_black }}"
+set notification-fg "{{ n_black }}"
+set notification-bg "{{ b_white }}"
+set notification-error-fg "{{ n_black }}"
+set notification-error-bg "{{ n_red }}"
+set notification-warning-fg "{{ n_black }}"
+set notification-warning-bg "{{ n_yellow }}"
+# Not sure hot to get the tab bar if there ain't no tabs afaik
+#set tabbar-fg "#FFFFFF"
+#set tabbar-bg "#000000"
+#set tabbar-focus-fg "#9FBC00"
+#set tabbar-focus-bg "#000000"
+set statusbar-fg "{{ n_primary }}"
+set statusbar-bg "{{ bgc }}"
+set highlight-color "{{ n_secondary }}"
+set highlight-active-color "{{ b_secondary }}"
+set render-loading-fg "{{ n_magenta }}"
+set render-loading-bg "{{ bgc }}"
+set index-fg "{{ n_secondary }}"
+set index-bg "{{ bgc }}"
+set index-active-fg "{{ b_secondary }}"
+set index-active-bg "{{ bgc }}"
+
+# Other settings
+set statusbar-home-tilde true

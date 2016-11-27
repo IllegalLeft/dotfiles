@@ -196,7 +196,7 @@ else
     set fillchars=vert:│
     set t_Co=256
     set background=dark
-    colorscheme flattown
+    colorscheme simp16 
 endif
 
 
