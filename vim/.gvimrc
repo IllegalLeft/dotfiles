@@ -9,9 +9,9 @@
 
 " Theme
 set bg=dark
-colorscheme jellybeans
+colorscheme gruvbox
 set guifont=Terminus\ 8
-    set fillchars=vert:│
+set fillchars=vert:│
 
 " Airline
 "AirlineTheme papercolor

@@ -57,15 +57,15 @@ hi WarningMsg   ctermfg=DarkRed     ctermbg=NONE
 hi WildMenu     cterm=NONE          ctermfg=Black       ctermbg=DarkGrey
 
 " Syntax
-hi Comment      cterm=NONE      ctermfg=DarkGrey       
-hi Constant     cterm=NONE      ctermfg=White
-hi Identifier   cterm=NONE      ctermfg=NONE
-hi PreProc      cterm=NONE      ctermfg=NONE
-hi Special      cterm=NONE      ctermfg=NONE
+hi Comment      cterm=NONE      ctermfg=DarkGreen
+hi Constant     cterm=NONE      ctermfg=Magenta
+hi Identifier   cterm=NONE      ctermfg=Yellow
+hi PreProc      cterm=NONE      ctermfg=DarkBlue
+hi Special      cterm=NONE      ctermfg=DarkRed
 hi SpecialComment   cterm=NONE  ctermfg=Green    ctermbg=NONE
 hi Debug        cterm=NONE      ctermfg=DarkGreen
-hi Statement    cterm=NONE      ctermfg=NONE
-hi Type	        cterm=NONE      ctermfg=NONE
+hi Statement    cterm=NONE      ctermfg=Green
+hi Type	        cterm=NONE      ctermfg=Cyan
 
 hi Error        ctermfg=White   ctermbg=DarkRed
 hi Todo         ctermfg=Black   ctermbg=Yellow
