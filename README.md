@@ -10,8 +10,10 @@
 Includes:
 * bash
 * crawl
+* firefox
 * ncmpcpp
 * nethack
+* ranger
 * scripts
 * startpage
 * syncterm
@@ -19,3 +21,6 @@ Includes:
 * vim
 * weechat
 * x
+* zathura
+* zenbu
+* zsh
