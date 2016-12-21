@@ -31,8 +31,8 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 # Prompt
 autoload -Uz colors
 colors
-PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}%# "
-RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
+PROMPT="%{$fg[cyan]%}Φ %{$fg_no_bold[blue]%}%c%{$reset_color%} %# "
+RPROMPT="%{$fg_bold[black]%}[%{$fg_no_bold[yellow]%}%?%{$reset_color%}%{$fg_bold[black]%}]%{$reset_color%}"
 
 # completion
 zstyle ':completion:*' completer _complete _ignored

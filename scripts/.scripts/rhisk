@@ -69,7 +69,7 @@ display() {
 
 options ()
 {
-	clear
+#	clear
 	local result=""
 	if [[  -z $($RHISK_COMM -l) ]]; then
 		err "You have no themes to display."
@@ -84,7 +84,7 @@ $(display "$t" "")"
 
 usage ()
 {
-	clear
+#	clear
 	more <<-'HELP'
 	rhisk - sanpai theme switch script
 	Usage:
