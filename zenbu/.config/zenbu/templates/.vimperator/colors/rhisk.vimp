@@ -1,0 +1,56 @@
+" ==Vimperator_Color_Scheme==
+" name: Rhisk
+" based off of the Simple color scheme
+" Samuel Volk
+" ==Simple_Color_Scheme=
+
+highlight Normal        font-size: 8px; font-family:"Px437 ATI 8x8"; color: {{ fgc }}; background: {{ bgc }}
+highlight StatusLine    font-size: 8px; font-family:"Px437 ATI 8x8"; color: {{ fgc }}; background: {{ bgc }}
+highlight CmdLine       font-size: 8px; font-weight: normal; font-family:"Px437 ATI 8x8", monospace; color: {{ fgc }}; background: {{ bgc }}; padding: 0 0;
+highlight CmdLine>*     font-size: 8px; font-family: "Px437 ATI 8x8";
+highlight CmdOutput     font-size 8px; font-family:"Px437 ATI 8x8";
+
+highlight Bell display: none;
+highlight NonText color: {{ n_secondary }} " ~ at the end of the text in cmdline
+
+highlight CompGroup          font-size: 8px; color: {{ b_secondary }};
+highlight CompTitle          font-size: 8px; color: {{ b_primary }}; background: {{ bgc }};
+highlight CompItem           padding: 0 0; font-family: "Px437 ATI 8x8", monospace;
+highlight CompItem[selected] background-color: {{ b_black }};
+highlight CompDesc           color: {{ n_white }};
+" highlight CompMsg
+" highlight Gradient           background-color: #FFF;
+" highlight GradientLeft       background-color: #FFF;
+" highlight GradientRight      background-color: #FFF;
+
+highlight ErrorMsg color: font-size: 8px; font-family: "Px437 ATI 8x8"; {{ b_white }}; background: {{ n_red }};
+highlight Filter font-weight: bold; color: {{ b_black }};
+
+highlight StatusLine       font-size: 8px; font-family: "Px437 ATI 8x8"; font-weight: normal; color: {{ fgc }}; background: {{ bgc }};
+" highlight StatusLineBroken font-size: 8px; font-weight: normal; color: #222; background: #FDD;
+" highlight StatusLineSecure font-size: 8px; font-weight: normal; color: #222; background: #DDF;
+" highlight StatusLine       font-size: 8px; font-weight: normal; color: #EEE; background: #111;
+" highlight StatusLineBroken font-size: 8px; font-weight: normal; color: #EEE; background: #311;
+" highlight StatusLineSecure font-size: 8px; font-weight: normal; color: #EEE; background: #114;
+
+highlight InfoMsg   font-size: 8px; font-family: "Px437 ATI 8x8"; color {{ b_primary }}; background {{ bgc }}
+highlight ModeMsg   font-size: 8px; font-family: "Px437 ATI 8x8"; color: {{ fgc }}; background: {{ b_primary }}; padding: 4px;
+highlight MoreMsg   font-size: 8px; font-family: "Px437 ATI 8x8"; color {{ b_primary }}; background: {{ bgc }};
+
+" highlight CompLess
+" highlight CompLess::after
+" highlight CompMore
+" highlight CompMore::after
+" highlight CompResult
+
+" highlight WarningMsg
+highlight Hint font-family: "Px437 ATI 8x8", monospace; font-size: 8px; font-weight: normal; color: {{ fgc }}; background-color: {{ n_primary }}; padding: 0px 2px;
+highlight HintElem background-color: {{ b_primary }};
+" highlight HintActive
+
+highlight Title font-size: 8px; color: {{ fgc }}; background: {{ bgc }};
+
+"style -name statusbar chrome://* <<EOM
+"#status-bar statusbarpanel { padding: 2px !important; }
+"statusbarpanel > * { margin: 0 !important; padding: 0 !important; }
+"EOM
