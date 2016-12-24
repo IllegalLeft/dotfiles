@@ -1,4 +1,4 @@
-
+# sudo woodo edited by Sam
 #if [ $EUID != 0 ]; then
 #    echo "It's a weird tree."
 #else
