@@ -32,7 +32,7 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 autoload -Uz colors
 colors
 PROMPT="%{$fg[cyan]%}Φ %{$fg_no_bold[blue]%}%c%{$reset_color%} %# "
-RPROMPT="%{$fg_bold[black]%}[%{$fg_no_bold[yellow]%}%?%{$reset_color%}%{$fg_bold[black]%}]%{$reset_color%}"
+RPROMPT="%{$fg_bold[black]%}[%{$fg_no_bold[yellow]%}%n%{$reset_color%}%{$fg_bold[black]%}]%{$reset_color%}"
 
 # completion
 zstyle ':completion:*' completer _complete _ignored
