@@ -15,6 +15,7 @@ highlight NonText color: {{ n_secondary }} " ~ at the end of the text in cmdline
 
 highlight CompGroup          font-size: 8px; color: {{ b_secondary }};
 highlight CompTitle          font-size: 8px; color: {{ b_primary }}; background: {{ bgc }};
+highlight CompTitle>*        color: {{ b_primary }}; background: {{ bgc }}
 highlight CompItem           padding: 0 0; font-family: "Px437 ATI 8x8", monospace;
 highlight CompItem[selected] background-color: {{ b_black }};
 highlight CompDesc           color: {{ n_white }};

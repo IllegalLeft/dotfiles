@@ -13,6 +13,8 @@
 exec ~/.fehbg
 # start mpd
 exec mpd
+# hide mouse cursor
+exec unclutter
 
 # Windows/Meta key as mod
 set $mod Mod4
