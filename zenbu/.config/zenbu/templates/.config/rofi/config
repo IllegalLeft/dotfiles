@@ -1,0 +1,17 @@
+!            __ _ 
+! _ __ ___  / _(_)
+!| '__/ _ \| |_| |
+!| | | (_) |  _| |
+!|_|  \___/|_| |_|
+!rofi                 
+!
+
+rofi.bw: 1
+rofi.font:  {{ font }} {{ fontsize }}
+
+!! COLORS
+rofi.color-window: {{ bgc }}, {{ n_secondary }}
+! State             bg          fg          bgalt       hlbg            hlfg
+rofi.color-normal: {{ bgc }}, {{ fgc }}, {{ bgc }}, {{ b_primary }}, {{ bgc }}
+rofi.color-urgent: {{ bgc }}, {{ fgc }}, {{ bgc }}, {{ b_primary }}, {{ bgc }}
+rofi.color-active: {{ bgc }}, {{ fgc }}, {{ bgc }}, {{ b_primary }}, {{ bgc }}

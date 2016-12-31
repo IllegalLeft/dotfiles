@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec notify-send "To-do" "$(cat ~/todo)"
