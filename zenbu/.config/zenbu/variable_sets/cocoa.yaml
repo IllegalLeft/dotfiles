@@ -1,0 +1,34 @@
+# Scheme:   Cocoa
+# Author:   Samuel Volk
+
+colors:
+    primary:    "blue"
+    secondary:  "red"
+
+    foreground: "#e5cfb9"
+    background: "#382f29"
+
+    black:
+        normal: "#3d322b"
+        bold:   "#7d6a58"
+    red:
+        normal: "#a93232"
+        bold:   "#e39c9c"
+    green:
+        normal: "#68ad30"
+        bold:   "#8eb66d"
+    yellow:
+        normal: "#cf8032"
+        bold:   "#f2e2a1"
+    blue:
+        normal: "#676b78"
+        bold:   "#9295a3"
+    magenta:
+        normal: "#b76d85"
+        bold:   "#d19ecf"
+    cyan:
+        normal: "#5dcfce"
+        bold:   "#91dedd"
+    white:
+        normal: "#b7aca1"
+        bold:   "#eeddcc"

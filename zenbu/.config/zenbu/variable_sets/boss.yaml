@@ -1,0 +1,35 @@
+# Scheme:   Boss
+# Author:   Samuel Volk
+# based off of Boss guitar pedals
+
+colors:
+    primary:    "black"
+    secondary:  "white"
+
+    foreground: "#becacc"
+    background: "#0a0a0a"
+
+    black:
+        normal: "#595959"
+        bold:   "#9f9f9f"
+    red:
+        normal: "#db2128"
+        bold:   "#db5421"
+    green:
+        normal: "#0d9d07"
+        bold:   "#2baf92"
+    yellow:
+        normal: "#de7a1a"
+        bold:   "#f5e131"
+    blue:
+        normal: "#2d38b7"
+        bold:   "#3947e3"
+    magenta:
+        normal: "#8611d2"
+        bold:   "#d4c9a8"
+    cyan:
+        normal: "#47bbd6"
+        bold:   "#94e9f6"
+    white:
+        normal: "#becacc"
+        bold:   "#e4e4e4"
