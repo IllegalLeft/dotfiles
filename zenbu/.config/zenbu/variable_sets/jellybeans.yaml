@@ -1,4 +1,7 @@
-colors: 
+# Scheme:   Jellybeans
+# Adapted from jellybean vim colourscheme
+
+colors:
     primary:    "blue"
     secondary:  "green"
     background: "#151515"
