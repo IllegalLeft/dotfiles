@@ -6,11 +6,18 @@
 "  |___/                            
 " .gvimrc
 "
+" Auto reload of .gvimrc file
+autocmd! bufwritepost .gvimrc source %
+
+" UI
+" default = egmrLtT
+" remove toolbar and scrollbars
+set guioptions=egmt
 
 " Theme
 set bg=dark
 colorscheme gruvbox
-set guifont=Terminus\ 8
+set guifont=DejaVu\ Sans\ Mono\ 8
 set fillchars=vert:│
 
 " Airline

@@ -175,7 +175,7 @@ function! MUSHcodeShrink()
     undo
     nohl
 endfunction
-noremap <silent> <Leader>r :call MUSHcodeShrink()<CR>
+noremap <silent> <Leader>t :call MUSHcodeShrink()<CR>
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 function! DeleteTrailingWS()
@@ -196,7 +196,7 @@ else
     set fillchars=vert:│
     set t_Co=256
     set background=dark
-    colorscheme simp16 
+    colorscheme wolfpack
 endif
 
 
