@@ -1,0 +1,35 @@
+# Scheme: Hotline
+#
+
+colors:
+    primary:    "magenta"
+    secondary:  "cyan"
+
+    foreground: "#eddcd3"
+    background: "#181512"
+
+    black:
+        normal: "#333333"
+        bold:   "#3d3d3d"
+    red:
+         normal: "#8c4665"
+         bold:   "#bf4d80"
+    green:
+         normal: "#287373"
+         bold:   "#53a6a6"
+    yellow:
+         normal: "#f74372"
+         bold:   "#db63b5"
+    blue:
+         normal: "#40bfa6"
+         bold:   "#40ddc2"
+    magenta:
+         normal: "#f82b4a"
+         bold:   "#f2397a"
+    cyan:
+         normal: "#31658c"
+         bold:   "#6096bf"
+    white:
+         normal: "#d3d7cf"
+         bold:   "#c0c0c0"
+#cursor: "#eddcd3"
