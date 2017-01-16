@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xcolors
+cp437 tt++ ~/.tintin/8bit.tin
