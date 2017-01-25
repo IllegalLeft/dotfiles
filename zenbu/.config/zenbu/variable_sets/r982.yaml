@@ -6,8 +6,8 @@ name: "r982"
 
 #COLORS
 colors:
-    primary:    "white"
-    secondary:  "blue"
+    primary:    "green"
+    secondary:  "red"
     background: "#21211F"
     foreground: "#B8B9B4"
 
@@ -19,7 +19,7 @@ colors:
         bold:   "#989995"
     green:
         normal: "#5E5E5C"
-        bold:   "#636361"
+        bold:   "#696967"
     yellow:
         normal: "#B6B8B3"
         bold:   "#BBBDB8"

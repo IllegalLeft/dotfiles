@@ -22,14 +22,14 @@
     --fg-light: {{ b_white }}; --fg-dark: {{ n_white }};
     --tab-triangle-correction: -1px;
     --tab-height: 18px; --tab-icon-size: 12px; --tab-strip-margin: -12px; --tab-overlap: -5px;
-    --tab-fonts: "Px437 IBM VGA8", "Clean", monospace,"Dejavu Sans"; --tab-font-size: 12pt;
+    --tab-fonts: "{{ font }}", "Dejavu Sans"; --tab-font-size: {{ fontsize }}pt;
     --tab-text-align: center; /* left | center | right */
     --tab-triangle: none;  /* block | none */
 
     /* URL VARIABLES */
     --url-background: var(--bg-light); --url-color: var(--fg-dark);
     --url-height: 18px; --url-right-margin: 6px;
-    --url-fonts: "Px437 ATI 8x8", "Clean",monospace,"Dejavu Sans"; --url-font-size: 6pt;
+    --url-fonts: "{{ font }}", "Dejavu Sans"; --url-font-size: {{ fontsize }}pt;
     --url-text-align: center; /* left | center | right */
     --url-position: absolute; /* absolute == top (under tabs) || fixed == bottom of browser */
 }
@@ -87,7 +87,7 @@
                     text-align: var(--url-text-align) !important;
                     height: 100% !important;
                 }
-                /*#urlbar * { -moz-appearance: none !important; }*/
+                /**/#urlbar * { -moz-appearance: none !important; }/**/
     
                 .urlbar-textbox-container .urlbar-input-box .textbox-input {
                     height: var(--url-height) !important;
@@ -111,7 +111,7 @@
     
     
     /* --- Comment out the section below to make the url-bar visible --- */
-    /*
+    /**/
     #nav-bar {
         width: 0 !important; height: 0 !important;
         position: fixed !important; left: -1px !important; top: -1px !important;

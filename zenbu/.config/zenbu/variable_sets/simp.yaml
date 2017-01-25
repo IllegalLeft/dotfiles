@@ -2,7 +2,7 @@
 # Author:   Samuel Volk
 
 colors:
-  primary:      "blue"
+  primary:      "green"
   secondary:    "red"
   background:   "#272727"
   foreground:   "#fafafa"
