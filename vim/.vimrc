@@ -36,7 +36,7 @@ filetype plugin indent on    " required
 """"""
 set nocompatible
 " Auto reload of .vimrc file
-autocmd! bufwritepost .vimrc source %
+"autocmd! bufwritepost .vimrc source %
 " Set auto read when file outside is changed
 set autoread
 " Map leader key
@@ -168,6 +168,13 @@ noremap <Leader>b :CtrlPBuffer<CR>
 
 " Functions
 """"""""""""
+" ArtMode
+function! ArtMode()
+    set nu!
+    set virtualedit=all
+    set nocolorcolumn
+endfunction
+command ArtMode : call ArtMode()
 " MUSHcode shrink - Leader + r
 function! MUSHcodeShrink()
     %s/\r\|\t\|\n\|\s\s\+//g   " remove \r, \t, \n, and multiple \s (2 or more)
