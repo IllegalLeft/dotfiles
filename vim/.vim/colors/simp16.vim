@@ -20,19 +20,19 @@ endif
 let g:colors_name = "simp16"
 
 " Vim
-hi Normal       cterm=NONE      ctermfg=LightGrey  ctermbg=Black
+hi Normal       cterm=NONE      ctermfg=DarkGrey  ctermbg=NONE
 hi ModeMsg      ctermfg=White   ctermbg=NONE
 " Cursor
-hi Cursor       cterm=NONE      ctermfg=bg          ctermbg=fg
+hi Cursor       cterm=reverse   ctermfg=NONE          ctermbg=NONE
 hi lCursor      cterm=NONE      ctermfg=NONE        ctermbg=Cyan
 hi CursorLine   cterm=NONE      ctermfg=NONE        ctermbg=DarkGrey
 hi CursorLineNr cterm=NONE      ctermfg=DarkGrey    ctermbg=NONE
 hi CursorColumn cterm=NONE      ctermfg=NONE        ctermbg=DarkGrey
 " Diff
-hi DiffAdd      ctermfg=Black       ctermbg=Green
-hi DiffChange   ctermfg=Black       ctermbg=Yellow
-hi DiffDelete   ctermfg=Black       ctermbg=Red
-hi DiffText     ctermfg=Black       ctermbg=Blue
+hi DiffAdd      ctermfg=Green       ctermbg=NONE
+hi DiffChange   ctermfg=Yellow      ctermbg=NONE
+hi DiffDelete   ctermfg=Red         ctermbg=NONE
+hi DiffText     ctermfg=Blue        ctermbg=NONE
 " Folds
 hi Folded       cterm=NONE      ctermfg=LightGrey   ctermbg=DarkGrey
 hi FoldColumn   cterm=NONE      ctermfg=LightGrey   ctermbg=DarkGrey
@@ -49,7 +49,7 @@ hi TabLineSel   cterm=NONE      ctermfg=Black       ctermbg=Grey
 " Misc
 hi Directory    ctermfg=Blue        ctermbg=NONE
 hi EndOfBuffer  ctermfg=Blue        ctermbg=NONE
-hi LineNr       ctermfg=DarkGrey    ctermbg=NONE
+hi LineNr       ctermfg=DarkGrey    ctermbg=Black
 hi MoreMsg      ctermfg=DarkBlue    ctermbg=NONE
 hi VertSplit    ctermfg=DarkGrey    ctermbg=LightGrey
 hi Visual       cterm=reverse       ctermfg=NONE        ctermbg=DarkGrey
@@ -57,17 +57,17 @@ hi WarningMsg   ctermfg=DarkRed     ctermbg=NONE
 hi WildMenu     cterm=NONE          ctermfg=Black       ctermbg=DarkGrey
 
 " Syntax
-hi Comment      cterm=NONE      ctermfg=DarkGreen
-hi Constant     cterm=NONE      ctermfg=Magenta
-hi Identifier   cterm=NONE      ctermfg=Yellow
-hi PreProc      cterm=NONE      ctermfg=DarkBlue
-hi Special      cterm=NONE      ctermfg=DarkRed
-hi SpecialComment   cterm=NONE  ctermfg=Green    ctermbg=NONE
-hi Debug        cterm=NONE      ctermfg=DarkGreen
-hi Statement    cterm=NONE      ctermfg=Green
-hi Type	        cterm=NONE      ctermfg=Cyan
+hi Comment          cterm=NONE      ctermfg=DarkGreen
+hi Constant         cterm=NONE      ctermfg=DarkGrey
+hi Identifier       cterm=NONE      ctermfg=Grey
+hi PreProc          cterm=NONE      ctermfg=Grey
+hi Special          cterm=NONE      ctermfg=Grey
+hi SpecialComment   cterm=NONE      ctermfg=Green
+hi Debug            cterm=NONE      ctermfg=Grey
+hi Statement        cterm=NONE      ctermfg=Grey
+hi Type             cterm=NONE      ctermfg=Grey
 
-hi Error        ctermfg=White   ctermbg=DarkRed
-hi Todo         ctermfg=Black   ctermbg=Yellow
+hi Error        ctermfg=White   ctermbg=Red
+hi Todo         ctermfg=Black   ctermbg=White
 
 " vim: sw=2

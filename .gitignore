@@ -1,10 +1,11 @@
-# vim stuff
+#vim stuff
 vim/.vim/bundle/*
 vim/.vim/session/*
 vim/.vim/.netrwhist
 
 # weechat stuff
 weechat/.weechat/logs/*
+weechat/.weechat/python/*
 weechat/.weechat/aspell.conf
 weechat/.weechat/charset.conf
 weechat/.weechat/exec.conf
@@ -15,6 +16,8 @@ weechat/.weechat/relay.conf
 weechat/.weechat/script.conf
 weechat/.weechat/sec.conf
 weechat/.weechat/trigger.conf
+weechat/.weechat/urls.log
+weechat/.weechat/urlgrab.conf
 weechat/.weechat/weechat.log
 weechat/.weechat/xfer.conf
 

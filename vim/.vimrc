@@ -16,7 +16,7 @@ Plugin 'gmarik/Vundle.vim'
 " My Bundles here:
 " Cosmetic
 "Plugin 'flazz/vim-colorschemes'         " colorschemes
-Plugin 'mhinz/vim-startify'             " start page
+"Plugin 'mhinz/vim-startify'             " start page
 "Plugin 'vim-airline/vim-airline'        " status line
 "Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'chriskempson/base16-vim'        " Base16 vim colorschemes
@@ -85,6 +85,7 @@ set wildmode=list:longest
 set wildignore+=*.dll,*.msi
 set wildignore+=*.o,*.exe
 set wildignore+=*.ape,*.flac,*.mp3,*.ogg,*.wav
+set wildignore+=*.bmp,*.gif,*.jpeg,*.jpg,*.ico,*.png,*.psd
 set wildignore+=*.mp4,*.mpeg,*.webm
 set wildignore+=*.gz,*.tar,*.tar.gz,*.zip
 " ruler/status line
@@ -196,7 +197,7 @@ else
     set fillchars=vert:│
     set t_Co=256
     set background=dark
-    colorscheme wolfpack
+    colorscheme goodwolf
 endif
 
 

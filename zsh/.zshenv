@@ -6,5 +6,6 @@
 #
 #.zshenv
 
-export EDITOR='/bin/vim'
+export EDITOR='/bin/vim -e'
+export VISUAL='/bin/vim'
 export PAGER='/bin/less'
