@@ -69,7 +69,6 @@ set textwidth=79 " used by gd(?)
 set colorcolumn=80
 " highlight cursour line
 "set cursorline
-"highlight ColorColumn ctermbg=233
 " no wrap on load
 set nowrap
 " no wrap when typing
@@ -188,7 +187,6 @@ endfunc
 
 " Theme
 """"""""
-"let base16colorspace=256  " Access colors present in 256 colorspace
 " TTY
 if ($TERM == "linux")
     color simp16
@@ -197,8 +195,10 @@ else
     set fillchars=vert:│
     set t_Co=256
     set background=dark
-    colorscheme goodwolf
+    colorscheme simp16
 endif
+" Colour column custom
+highlight ColorColumn ctermbg=DarkGrey
 
 
 " Syntax
@@ -207,8 +207,6 @@ endif
 filetype off
 filetype plugin indent on
 syntax on
-" Colour column custom
-highlight ColourColumn ctermbg=233
 
 " Arduino syntax
 au BufRead,BufNewFile *.pde set filetype=arduino
