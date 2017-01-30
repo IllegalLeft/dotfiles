@@ -16,7 +16,6 @@ Includes:
 * ranger
 * scripts
 * startpage
-* syncterm
 * tmux
 * vim
 * weechat
