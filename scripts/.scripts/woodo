@@ -1,7 +1,6 @@
-# sudo woodo edited by Sam
-#if [ $EUID != 0 ]; then
-#    echo "It's a weird tree."
-#else
+if [ $EUID != 0 ]; then
+    echo "It's a weird tree."
+else
     echo '     _              __'
     echo '    / `\  (~._    ./  )'
     echo '    \__/ __`-_\__/ ./'
@@ -16,4 +15,4 @@
     echo '     (  |     (  (____'
     echo '   .--  .. ----**.____)'
     echo '   \___/          '
-#fi
+fi
