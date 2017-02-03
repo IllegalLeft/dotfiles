@@ -6,6 +6,7 @@ vim/.vim/.netrwhist
 # weechat stuff
 weechat/.weechat/logs/*
 weechat/.weechat/python/*
+weechat/.weechat/script/plugins.xml.gz
 weechat/.weechat/aspell.conf
 weechat/.weechat/charset.conf
 weechat/.weechat/exec.conf
