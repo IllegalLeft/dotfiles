@@ -8,6 +8,7 @@
 " By: Samuel Volk
 " Last Edited: Friday, November 4, 2016
 " Description: Simple 16 color scheme with very little highlighting.
+"
 
 hi clear
 
@@ -20,7 +21,7 @@ endif
 let g:colors_name = "simp16"
 
 " Vim
-hi Normal       cterm=NONE      ctermfg=Grey        ctermbg=NONE
+hi Normal       cterm=NONE      ctermfg=Gray       ctermbg=NONE
 hi ModeMsg      ctermfg=White   ctermbg=NONE
 " Cursor
 hi Cursor       cterm=reverse   ctermfg=NONE          ctermbg=NONE
@@ -64,6 +65,7 @@ hi Identifier       cterm=NONE      ctermfg=NONE
 hi PreProc          cterm=NONE      ctermfg=NONE
 hi Special          cterm=NONE      ctermfg=Grey
 hi SpecialComment   cterm=NONE      ctermfg=Grey
+hi SpecialKey       cterm=NONE      ctermfg=Grey
 hi Debug            cterm=NONE      ctermfg=Grey
 hi Statement        cterm=NONE      ctermfg=NONE
 hi Type             cterm=NONE      ctermfg=None
@@ -71,4 +73,3 @@ hi Type             cterm=NONE      ctermfg=None
 hi Error        ctermfg=White   ctermbg=Red
 hi Todo         ctermfg=Black   ctermbg=White
 
-" vim: sw=2

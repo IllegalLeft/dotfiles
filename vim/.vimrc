@@ -56,7 +56,7 @@ set ttyfast
 " Editor
 """""""""
 " Enable mouse
-set mouse=a
+"set mouse=a
 " tabstop
 set tabstop=4
 set softtabstop=4
@@ -66,7 +66,7 @@ set expandtab
 " Line length to 79 chars
 set textwidth=79 " used by gd(?)
 " Colour the 80th coloumn
-set colorcolumn=80
+"set colorcolumn=80
 " highlight cursour line
 "set cursorline
 " no wrap on load
@@ -74,7 +74,7 @@ set nowrap
 " no wrap when typing
 set fo-=t
 " line numbers
-set number
+"set number
 " buffer becomes hidden when abandoned
 set hidden
 " command autocomplete like shell
@@ -172,7 +172,7 @@ noremap <Leader>b :CtrlPBuffer<CR>
 function! ArtMode()
     set nu!
     set virtualedit=all
-    set nocolorcolumn
+    set colorcolumn=80
 endfunction
 command ArtMode : call ArtMode()
 " MUSHcode shrink - Leader + r
