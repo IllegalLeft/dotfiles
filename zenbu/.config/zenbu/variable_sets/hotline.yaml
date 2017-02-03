@@ -2,7 +2,7 @@
 #
 
 colors:
-    primary:    "magenta"
+    primary:    "yellow"
     secondary:  "cyan"
 
     foreground: "#eddcd3"
@@ -24,7 +24,7 @@ colors:
          normal: "#40bfa6"
          bold:   "#40ddc2"
     magenta:
-         normal: "#f82b4a"
+         normal: "#e92b4a"
          bold:   "#f2397a"
     cyan:
          normal: "#31658c"
@@ -32,4 +32,3 @@ colors:
     white:
          normal: "#d3d7cf"
          bold:   "#c0c0c0"
-#cursor: "#eddcd3"

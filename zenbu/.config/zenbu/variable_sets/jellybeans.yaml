@@ -4,7 +4,7 @@
 colors:
     primary:    "blue"
     secondary:  "green"
-    background: "#151515"
+    background: "#222222"
     foreground: "#e8e8d3"
     black:
         normal: "#151515"

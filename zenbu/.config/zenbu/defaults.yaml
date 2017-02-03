@@ -74,5 +74,7 @@ b_secondary:  "{{ colors[colors.secondary].bold }}"
 
 text_primary:         "{{ colors.primary }}"
 text_secondary:       "{{ colors.secondary }}"
-ncmpcpp_primary_n:    "{{ colornumbers[colors.primary] + 1 }}"
-ncmpcpp_secondary_n:  "{{ colornumbers[colors.secondary] + 1 }}"
+
+border_primary:    "{{ colors[colors.primary].normal }}"
+border_secondary:  "{{ colors[colors.secondary].normal }}"
+

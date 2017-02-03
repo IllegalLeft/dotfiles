@@ -13,20 +13,20 @@ colors:
     normal:     "#922f2f"
     bold:       "#bb1919"
   green:
-    normal:     "#a76326"
-    bold:       "#c65d00"
+    normal:     "#78951e"
+    bold:       "#a4d411"
   yellow:
     normal:     "#ada855"
     bold:       "#c9bf09"
   blue:
-    normal:     "#3a3d7b"
-    bold:       "#4b50ad"
+    normal:     "#3f3f7b"
+    bold:       "#4b50b0"
   magenta:
     normal:     "#582d84"
     bold:       "#6e35a7"
   cyan:
-    normal:     "#145c7d"
-    bold:       "#0c6e9c"
+    normal:     "#b0680a"
+    bold:       "#d67d08"
   white:
     normal:     "#72729c"
     bold:       "#a6a6d1"

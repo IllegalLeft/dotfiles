@@ -13,7 +13,7 @@ colors:
 
     black:
         normal: "#262624"
-        bold:   "#2B2B29"
+        bold:   "#404040"
     red:
         normal: "#939490"
         bold:   "#989995"

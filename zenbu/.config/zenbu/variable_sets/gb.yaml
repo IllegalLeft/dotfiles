@@ -1,5 +1,11 @@
 # Scheme:   GameBoy
 # Author:   Samuel Volk
+#
+# Real palette is something like:
+# #0f380f
+# #306230
+# #8bac0f
+# #9bbc0f
 
 colors:
   primary:      "cyan"
@@ -8,15 +14,15 @@ colors:
   foreground:   "#8bac0f"
   black:
     normal:     "#0f380f"
-    bold:       "#8bac0f"
+    bold:       "#195219"
   red:
-    normal:     "#0f380f"
-    bold:       "#8bac0f"
+    normal:     "#306230"
+    bold:       "#306230"
   green:
-    normal:     "#0f380f"
-    bold:       "#8bac0f"
+    normal:     "#306230"
+    bold:       "#306230"
   yellow:
-    normal:     "#0f380f"
+    normal:     "#306230"
     bold:       "#8bac0f"
   blue:
     normal:     "#306230"
