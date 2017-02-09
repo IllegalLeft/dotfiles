@@ -24,10 +24,10 @@ let g:colors_name = "simp16"
 hi Normal       cterm=NONE      ctermfg=Gray       ctermbg=NONE
 hi ModeMsg      ctermfg=White   ctermbg=NONE
 " Cursor
-hi Cursor       cterm=reverse   ctermfg=NONE          ctermbg=NONE
+hi Cursor       cterm=reverse   ctermfg=NONE        ctermbg=NONE
 hi lCursor      cterm=NONE      ctermfg=NONE        ctermbg=Cyan
-hi CursorLine   cterm=NONE      ctermfg=NONE        ctermbg=DarkGrey
-hi CursorLineNr cterm=NONE      ctermfg=DarkGrey    ctermbg=NONE
+hi CursorLine   cterm=NONE      ctermfg=NONE        ctermbg=Black
+hi CursorLineNr cterm=NONE      ctermfg=White        ctermbg=NONE
 hi CursorColumn cterm=NONE      ctermfg=NONE        ctermbg=DarkGrey
 " Diff
 hi DiffAdd      ctermfg=Green       ctermbg=NONE

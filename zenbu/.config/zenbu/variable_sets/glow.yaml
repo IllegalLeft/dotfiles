@@ -1,8 +1,11 @@
 # Scheme:   Glow
 # Author:   Samuel Volk
+#
+# modeled after pic of tubes glowing in dark
+# NOTE: green is orange
 
 colors:
-  primary:      "magenta"
+  primary:      "blue"
   secondary:    "green"
   background:   "#151529"
   foreground:   "#8b8ba0"
@@ -13,20 +16,20 @@ colors:
     normal:     "#922f2f"
     bold:       "#bb1919"
   green:
-    normal:     "#78951e"
-    bold:       "#a4d411"
+    normal:     "#b0680a"
+    bold:       "#c28132"
   yellow:
     normal:     "#ada855"
     bold:       "#c9bf09"
   blue:
     normal:     "#3f3f7b"
-    bold:       "#4b50b0"
+    bold:       "#40448c"
   magenta:
-    normal:     "#582d84"
-    bold:       "#6e35a7"
+    normal:     "#582d87"
+    bold:       "#6e35aa"
   cyan:
-    normal:     "#b0680a"
-    bold:       "#d67d08"
+    normal:     "#659efe"
+    bold:       "#8df3fd"
   white:
     normal:     "#72729c"
     bold:       "#a6a6d1"

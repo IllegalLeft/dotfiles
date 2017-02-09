@@ -4,7 +4,7 @@ colors:
   background:   "#292929"
   foreground:   "#c1cfda"
   black:
-    bold:       "#2d3033"
+    bold:       "#3d4043"
     normal:     "#292929"
   red:
     bold:       "#be7b7c"
