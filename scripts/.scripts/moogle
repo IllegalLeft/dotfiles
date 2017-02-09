@@ -1,0 +1,14 @@
+# Here Be Moogle ASCIIs
+ 
+RED='\033[0;31m'    # Sets red color
+CYAN='\033[0;36m'   # Sets cyan color
+BLACK='\033[1;36m'  # Sets "black"
+LGRAY='\033[0;37m' # Sets light gray color
+YELLOW='\033[1;33m' # Sets yellow
+BRORANGE='\033[0;33m' # Sets brown orange
+VIOLET='\033[0;35m' # Sets violet
+NC='\033[0m'    # Sets no color
+echo -e "          ${RED}${NC}"
+echo -e "       ${CYAN}/\__\__/\\ ${NC} "
+echo -e "      ${CYAN}/         \\ ${NC}"
+echo -e "   ${BLACK}\ ${CYAN}( ${LGRAY}ﾐ${CYAN}⌒ ${RED} ●${CYAN} ⌒ ${LGRAY}ﾐ${CYAN} )${BLACK} /  ${YELLOW}★ ${RED}K${BRORANGE}U${YELLOW}P${VIOLET}O${YELLOW}★"
