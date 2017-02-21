@@ -9,7 +9,8 @@
 " Plugins
 """"""""""
 " set the runtime path to include Vundle and initialize
-if exists(':VundleInstall')
+if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
+    let g:hasVundle = 1
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
     " Let vundle manage itself
@@ -31,6 +32,8 @@ if exists(':VundleInstall')
     " All of your Plugins must be added before the following line
     call vundle#end()            " required
     filetype plugin indent on    " required
+else
+    let g:hasVundle = 0
 endif
 
 
