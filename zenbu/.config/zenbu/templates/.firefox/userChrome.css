@@ -111,7 +111,7 @@
     
     
     /* --- Comment out the section below to make the url-bar visible --- */
-    /**/
+    /*
     #nav-bar {
         width: 0 !important; height: 0 !important;
         position: fixed !important; left: -1px !important; top: -1px !important;

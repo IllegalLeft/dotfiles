@@ -201,7 +201,7 @@ bar {
         active_workspace    {{ n_primary }} {{ b_primary }} {{ n_black }}
         inactive_workspace  {{ b_black }} {{ bgc }} {{ fgc }}
         urgent_workspace    {{ n_red }} {{ b_red }} {{ n_black }}
-        binding_mode        {{ n_primary }} {{ b_primary }} {{ bgc }}
+        binding_mode        {{ n_secondary }} {{ b_secondary }} {{ bgc }}
     }
 
     mode dock

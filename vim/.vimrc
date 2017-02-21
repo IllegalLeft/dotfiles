@@ -239,16 +239,16 @@ let g:netwr_liststyle = 3
 let g:netwr_banner = 0
 
 " Startify
-let g:startify_disable_at_vimenter = 0
-let g:startify_files_number = 10
+"let g:startify_disable_at_vimenter = 0
+"let g:startify_files_number = 10
 "hi StartifyHeader   ctermfg=034
-let g:startify_custom_header = [
-    \ '                  ',
-    \ ' $$$$  $$$$       ',
-    \ '  $$   a$P        ',
-    \ '  $$ ,$$''         ',
-    \ '  $$a$P  *  $+a+a ',
-    \ '  $$$''   $  $ $ $ ',
-    \ '   ~              ',
-    \ '                  ',
-    \ ]
+"let g:startify_custom_header = [
+"    \ '                  ',
+"    \ ' $$$$  $$$$       ',
+"    \ '  $$   a$P        ',
+"    \ '  $$ ,$$''         ',
+"    \ '  $$a$P  *  $+a+a ',
+"    \ '  $$$''   $  $ $ $ ',
+"    \ '   ~              ',
+"    \ '                  ',
+"    \ ]

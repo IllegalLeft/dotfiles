@@ -10,7 +10,7 @@ rofi.bw: 1
 rofi.font:  {{ font }} {{ fontsize }}
 
 !! COLORS
-rofi.color-window: {{ bgc }}, {{ n_secondary }}
+rofi.color-window: {{ bgc }}, {{ n_primary }}
 ! State             bg          fg          bgalt       hlbg            hlfg
 rofi.color-normal: {{ bgc }}, {{ fgc }}, {{ bgc }}, {{ b_primary }}, {{ bgc }}
 rofi.color-urgent: {{ bgc }}, {{ fgc }}, {{ bgc }}, {{ b_primary }}, {{ bgc }}
