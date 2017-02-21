@@ -9,27 +9,29 @@
 " Plugins
 """"""""""
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" Let vundle manage itself
-Plugin 'gmarik/Vundle.vim'
-" My Bundles here:
-" Cosmetic
-"Plugin 'flazz/vim-colorschemes'         " colorschemes
-"Plugin 'mhinz/vim-startify'             " start page
-"Plugin 'vim-airline/vim-airline'        " status line
-"Plugin 'vim-airline/vim-airline-themes'
-"Plugin 'chriskempson/base16-vim'        " Base16 vim colorschemes
-" Syntax
-Plugin 'zaiste/tmux.vim'                " tmux syntax
-" Functionality
-"Plugin 'FredKSchott/CoVim'	            " collaborative editing
-Plugin 'tpope/vim-fugitive'		        " git commands inside vim
-"Plugin 'scrooloose/nerdtree'	        " filebrowser
-Plugin 'ctrlpvim/ctrlp.vim'             " fuzzy search
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+if exists(':VundleInstall')
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+    " Let vundle manage itself
+    Plugin 'gmarik/Vundle.vim'
+    " My Bundles here:
+    " Cosmetic
+    "Plugin 'flazz/vim-colorschemes'         " colorschemes
+    "Plugin 'mhinz/vim-startify'             " start page
+    "Plugin 'vim-airline/vim-airline'        " status line
+    "Plugin 'vim-airline/vim-airline-themes'
+    "Plugin 'chriskempson/base16-vim'        " Base16 vim colorschemes
+    " Syntax
+    Plugin 'zaiste/tmux.vim'                " tmux syntax
+    " Functionality
+    "Plugin 'FredKSchott/CoVim'	            " collaborative editing
+    Plugin 'tpope/vim-fugitive'		        " git commands inside vim
+    "Plugin 'scrooloose/nerdtree'	        " filebrowser
+    Plugin 'ctrlpvim/ctrlp.vim'             " fuzzy search
+    " All of your Plugins must be added before the following line
+    call vundle#end()            " required
+    filetype plugin indent on    " required
+endif
 
 
 " Vim
