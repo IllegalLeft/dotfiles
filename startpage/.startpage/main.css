@@ -32,7 +32,7 @@ html, body, h1, ul, li, p {
   padding: 0; }
 
 body {
-  background: #2c070c;
+  background: #21211F;
   height: 100vh;
   width: 100vw; }
 
@@ -48,14 +48,14 @@ main {
     left: 40%;
     transform: translate(-40%, -60%); } }
 h1 {
-  color: #a1312f;
+  color: #696967;
   font-family: "Nimbus Sans","Liberation Serif";
   font-size: 12px;
   font-weight: normal; 
   margin: 15px; }
 
 p {
-  color: #a1312f;
+  color: #696967;
   font-family: "Nimbus Sans", "pxplus_ibm_vga8regular","Arial";
   font-size: 12px;
   letter-spacing: 0px;
@@ -77,7 +77,7 @@ li {
   margin: 0 5px; }
 
 .ansi {
-  color: #a1312f;
+  color: #696967;
   font-family: "xos4 Terminus", "pxplus_ibm_vga8regular", monospace;
   font-size: 12px;
   font-weight: normal;
@@ -91,34 +91,34 @@ li {
   margin: 10px;
   transition: .2s; }
 .box:hover {
-  background-color: #381010; }
+  background-color: #404040; }
 
 .subh {
-  color: #ecb467;
+  color: #989995;
   margin-top: 5px;
   text-decoration: none;
   transition: .2s; }
 
 .subh:hover {
-  color: #c1835a; }
+  color: #939490; }
 
 a {
-  color: #772321;
+  color: #5E5E5C;
   text-decoration: none;
   transition: .2s; }
 
 a:hover {
-  color: #f6ecd3; }
+  color: #B8B9B4; }
 
 .subh a {
-  color: #f6ecd3; }
+  color: #AFB0AB; }
 
 .subh a:hover {
-  color: #d5b093; }
+  color: #AAABA6; }
 
 .searchfield {
-  background: #381010;
-  color: #f6ecd3;
+  background: #404040;
+  color: #AFB0AB;
   border: none;
   display: block;
   font-family: "Nimbus Sans", "Liberation Serif",Helvetica,Arial,sans-serif;

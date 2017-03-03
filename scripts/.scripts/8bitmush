@@ -1,4 +1,12 @@
 #!/bin/bash
 
-xcolors
-cp437 tt++ ~/.tintin/8bit.tin
+SESSION="mush"
+MUSH="8bit"
+
+
+tmux new-session -Ad -s $SESSION -n $MUSH 'cp437 tt++ -G ~/.tintin/8bit.tin'
+tmux split-window -vp 25 'tail -fn0 /home/sam/.tintin/log/8bit/public.log'
+tmux split-window -hp 50 'tail -fn0 /home/sam/.tintin/log/8bit/volks.log'
+tmux select-pane -t 1
+
+tmux attach-session -t $SESSION

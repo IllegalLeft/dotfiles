@@ -26,7 +26,7 @@ urxvt.urgentOnBell: true
 urxvt.scrollBar: false
 urxvt.internalBorder: 5
 ! Fonts
-urxvt.font: xft:{{ font }}::pixelsize={{ fontsize }}
+urxvt.font: xft:{{ font }}:size={{ fontsize }}
 
 ! Xft
 xft.dpi:        96
@@ -35,10 +35,10 @@ xft.rgba:       rgb
 xft.hinting:    true
 xft.hintstyle:  hintslight
 
-urxvt*.perl-ext-common : default,matcher
-urxvt*.url-launcher     : firefox
-urxvt*.matcher.button  : 1
-urxvt*.transparent: false
+urxvt*.perl-ext-common: default,matcher
+urxvt*.url-launcher:    firefox
+urxvt*.matcher.button:  1
+urxvt*.transparent:     false
 
 != COLORS =
 ! Colors

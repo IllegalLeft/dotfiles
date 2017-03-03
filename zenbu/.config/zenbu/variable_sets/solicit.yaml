@@ -6,7 +6,7 @@ colors:
     secondary:  "magenta"
 
     foreground: "#babcbd"
-    background: "#202020"
+    background: "#1b1b1b"
 
     black:
         normal: "#202020"

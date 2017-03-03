@@ -11,7 +11,7 @@ colors:
 
     black:
         normal: "#2c070c"
-        bold:   "#381010"
+        bold:   "#5b2727"
     red:
         normal: "#772321"
         bold:   "#a1312f"
@@ -25,7 +25,7 @@ colors:
         normal: "#6e808c"
         bold:   "#9a9e9d"
     magenta:
-        normal: "#4d0f10"
+        normal: "#5e1516"
         bold:   "#6a1c1a"
     cyan:
         normal: "#b35c3e"

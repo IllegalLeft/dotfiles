@@ -6,10 +6,8 @@
 # ~/.nethackrc
 # 
 
-#OPTIONS=showexp,showscore,time,color,!autopickup
-#OPTIONS=autodig,fruit:slime mold,boulder:0
-
 # System
+OPTIONS=disclose: +i +a +v +g +c +o
 #OPTIONS=windowtype:curses    <== Don't have :'(
 OPTIONS=number_pad:1
 OPTIONS=standout
@@ -27,7 +25,13 @@ OPTIONS=!fixinv
 #Graphics
 OPTIONS=boulder:0
 OPTIONS=color
+OPTIONS=menucolors
+MENUCOLOR="blessed"=green&bold
+MENUCOLOR="holy"=green&bold
+MENUCOLOR="cursed"=red
+MENUCOLOR="unholy"=red
 OPTIONS=hilite_pet
+OPTIONS=hilite_pile
 OPTIONS=lit_corridor
 OPTIONS=showexp,showrace,showscore
 OPTIONS=windowcolors:menu white/black message green/yellow status white/blue text white/black

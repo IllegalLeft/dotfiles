@@ -49,4 +49,5 @@ bindkey "${terminfo[kdch1]}" delete-char
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-
+setopt HIST_IGNORE_DUPS
+setopt HIST_REDUCE_BLANKS

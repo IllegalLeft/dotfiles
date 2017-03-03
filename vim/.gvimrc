@@ -13,11 +13,15 @@ autocmd! bufwritepost .gvimrc source %
 " default = egmrLtT
 " remove toolbar and scrollbars
 set guioptions=egmt
+" e - tabpages/line
+" g - grey meny items
+" m - menu bar is present
+" t - tear off menu items
 
 " Theme
 set bg=dark
-colorscheme gruvbox
-set guifont=DejaVu\ Sans\ Mono\ 8
+colorscheme seti
+set guifont=artwiz\ smoothansi\ 8
 set fillchars=vert:│
 
 " Airline
