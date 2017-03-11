@@ -96,11 +96,7 @@ li {
 .subh {
   color: {{ b_secondary }};
   margin-top: 5px;
-  text-decoration: none;
-  transition: .2s; }
-
-.subh:hover {
-  color: {{ n_secondary }}; }
+  text-decoration: none;}
 
 a {
   color: {{ n_primary }};

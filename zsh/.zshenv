@@ -10,4 +10,4 @@ export EDITOR='/bin/vim'
 export VISUAL='/bin/vim'
 export PAGER='/bin/less'
 
-export TERMINAL='/bin/urxvt'
+export TERMINAL='/bin/urxvtc'

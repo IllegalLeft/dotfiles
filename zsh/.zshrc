@@ -24,6 +24,7 @@ alias view='vim -R'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+alias mkdir='mkdir -p'
 
 # arch pkgfile command-not-found hook
 source /usr/share/doc/pkgfile/command-not-found.bash
@@ -51,3 +52,6 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt HIST_IGNORE_DUPS
 setopt HIST_REDUCE_BLANKS
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY
