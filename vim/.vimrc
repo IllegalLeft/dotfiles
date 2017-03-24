@@ -8,9 +8,9 @@
 
 " Plugins
 """"""""""
-" set the runtime path to include Vundle and initialize
 if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     let g:hasVundle = 1
+    " set the runtime path to include Vundle and initialize
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
     " Let vundle manage itself
@@ -19,15 +19,15 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     " Cosmetic
     "Plugin 'flazz/vim-colorschemes'         " colorschemes
     "Plugin 'mhinz/vim-startify'             " start page
-    "Plugin 'vim-airline/vim-airline'        " status line
-    "Plugin 'vim-airline/vim-airline-themes'
+    Plugin 'vim-airline/vim-airline'        " status line
+    Plugin 'vim-airline/vim-airline-themes'
     "Plugin 'chriskempson/base16-vim'        " Base16 vim colorschemes
     " Syntax
     Plugin 'zaiste/tmux.vim'                " tmux syntax
     " Functionality
     "Plugin 'FredKSchott/CoVim'	            " collaborative editing
     Plugin 'tpope/vim-fugitive'		        " git commands inside vim
-    "Plugin 'scrooloose/nerdtree'	        " filebrowser
+    Plugin 'scrooloose/nerdtree'	        " filebrowser
     Plugin 'ctrlpvim/ctrlp.vim'             " fuzzy search
     " All of your Plugins must be added before the following line
     call vundle#end()            " required
@@ -51,7 +51,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 " Set statusline always visible
-set laststatus=1
+set laststatus=2
 " Don't redraw the screen during macros
 set lazyredraw
 " fast terminal connection
@@ -61,7 +61,7 @@ set ttyfast
 " Editor
 """""""""
 " Enable mouse
-"set mouse=a
+set mouse=a
 " tabstop
 set tabstop=4
 set softtabstop=4
@@ -90,7 +90,7 @@ set wildignore+=*.dll,*.msi
 set wildignore+=*.o,*.exe
 set wildignore+=*.ape,*.flac,*.mp3,*.ogg,*.wav
 set wildignore+=*.bmp,*.gif,*.jpeg,*.jpg,*.ico,*.png,*.psd
-set wildignore+=*.mp4,*.mpeg,*.webm
+set wildignore+=*.mov,*.mp4,*.mpeg,*.webm
 set wildignore+=*.gz,*.tar,*.tar.gz,*.zip
 " ruler/status line
 set ruler
@@ -112,12 +112,6 @@ set showmatch
 
 " Mappings
 """""""""""
-" Insert Movement - Ctrl + h/j/k/l
-"noremap <C-h> <C-o>h
-"inoremap <C-l> <C-o>a
-"inoremap <C-j> <C-o>j
-"inoremap <C-k> <C-o>k
-"inoremap <C-^> <C-o><C-^>
 " Save - Leader + w
 noremap <Leader>w :update<CR>
 vnoremap <Leader>w <C-C>:update<CR>
@@ -164,8 +158,8 @@ noremap <Leader>gs :Gstatus<CR>
 
 " netwr & NERDtree
 " map <Leader> + f to toggle
-"noremap <Leader>f :NERDTreeToggle<CR>
-noremap <Leader>f :Vexplore<CR>
+noremap <Leader>f :NERDTreeToggle<CR>
+"noremap <Leader>f :Vexplore<CR>
 
 " CtrlP
 " map <Leader> + b to search for buffers
@@ -195,6 +189,7 @@ function! DeleteTrailingWS()
     %s/\s\+$//ge
     exe "normal `z"
 endfunc
+command DeleteTrailingWS : call DeleteTrailingWS()
 
 
 " Theme
@@ -207,7 +202,7 @@ else
     set fillchars=vert:│
     set t_Co=256
     set background=dark
-    colorscheme simp16
+    colorscheme jellybeans
 endif
 " Colour column custom
 highlight ColorColumn ctermbg=DarkGrey
@@ -229,12 +224,16 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 
 
 " Airline
-"let g:airline_theme = "powerlineish"
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline_left_sep = '»'
-"let g:airline_right_sep = '«'
-"let g:airline_symbols.linenr = '#'
-"let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_theme = "jellybeans"
+if !exists('g:airline_sumbols')
+    let g:airline_symbols = {}
+endif
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_left_sep = '▓▒░'
+let g:airline_right_sep = '░▒▓'
+let g:airline_symbols.linenr = '#'
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.whitespace = 'Ξ'
 
 " CoVim
 "let CoVim_default_name = "Sam"

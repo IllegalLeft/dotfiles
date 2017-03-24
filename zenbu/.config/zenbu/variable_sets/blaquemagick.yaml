@@ -1,0 +1,36 @@
+# Scheme: Blaquemagick
+# Author: Xero
+#
+
+colors:
+    primary:    "red"
+    secondary:  "blue"
+
+    foreground: "#c2c2b0"
+    background: "#121212"
+
+    black:
+        normal: "#121212"
+        bold:   "#121212"
+    red:
+        normal: "#5f8787"
+        bold:   "#5f8787"
+    green:
+        normal: "#444444"
+        bold:   "#444444"
+    yellow:
+        normal: "#666666"
+        bold:   "#666666"
+    blue:
+        normal: "#888888"
+        bold:   "#888888"
+    magenta:
+        normal: "#999999"
+        bold:   "#999999"
+    cyan:
+        normal: "#aaaaaa"
+        bold:   "#aaaaaa"
+    white:
+        normal: "#c1c1c1"
+        bold:   "#c1c1c1"
+    

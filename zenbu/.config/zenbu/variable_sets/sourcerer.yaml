@@ -1,0 +1,37 @@
+# Scheme: Sourcerer
+# Author: Xero
+# Based on Sorcerer by Jeet Sukumaran (http://jeetworks.org)
+# Based on Mustang by Henrique C. Alves (hcarvalhoalves@gmail.com)
+
+colors:
+    primary:    "blue"
+    secondary:  "green"
+
+    foreground: "#c2c2b0"
+    background: "#222222"
+
+    black:
+        normal: "#222222"
+        bold:   "#272822"
+    red:
+        normal: "#aa4450"
+        bold:   "#ff6a6a"
+    green:
+        normal: "#719611"
+        bold:   "#b1d631"
+    yellow:
+        normal: "#cc8800"
+        bold:   "#ff9800"
+    blue:
+        normal: "#6688aa"
+        bold:   "#90b0d1"
+    magenta:
+        normal: "#8f6f8f"
+        bold:   "#8181a6"
+    cyan:
+        normal: "#528b8b"
+        bold:   "#87ceeb"
+    white:
+        normal: "#d3d3d3"
+        bold:   "#c1cdc1"
+    
