@@ -29,7 +29,7 @@ font pango:{{ font }} {{ fontsize }}
 floating_modifier $mod
 
 # window borders all the time
-hide_edge_borders none
+hide_edge_borders smart
 # window border size
 new_window pixel 1
 new_float pixel 1
@@ -142,9 +142,11 @@ bindsym $mod+Shift+s exec --no-startup-id systemctl poweroff
 
 # colors
 # class                 border  backgr. text    indicator   child_border
-client.focused          {{ border_primary }} {{ b_primary }} {{ n_black }} {{ n_white }} {{ b_primary }}
-client.focused_inactive {{ border_secondary }} {{ n_primary }} {{ n_white }} {{ n_primary }} {{ n_primary }}
-client.unfocused        {{ border_secondary }} {{ n_primary }} {{ n_white }} {{ n_primary }} {{ n_primary }}
+client.focused          {{ border_primary }} {{ border_primary }} {{ n_black }} {{ n_white }} {{ b_primary }}
+client.focused_inactive {{ border_secondary }} {{ border_secondary }} {{ n_white }} {{ n_primary }} {{ border_secondary }}
+client.unfocused        {{ border_secondary }} {{ border_secondary }} {{ n_white }} {{ n_primary }} {{ border_secondary }}
+#client.focused_inactive #FF0000  #00FF00  #0000FF  #FFFF00 #FF00FF
+#client.unfocused        #FF0000  #00FF00  #0000FF  #FFFF00 #FF00FF
 client.urgent           {{ n_red }} {{ n_red }} {{ n_black }} {{ n_red }} {{ n_red }}
 
 # resize window (you can also use the mouse for that)
@@ -174,14 +176,13 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 set $Locker samlock && sleep 1
-set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+set $mode_system <L>ock  <E>xit  <H>ibernate  <R>eboot  <S>hutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
-    bindsym s exec --no-startup-id systemctl suspend, mode "default"
     bindsym h exec --no-startup-id systemctl hibernate, mode "default"
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id systemctl poweroff, mode "default"
+    bindsym s exec --no-startup-id systemctl poweroff, mode "default"
 
     # exit out of it
     bindsym Return mode "default"

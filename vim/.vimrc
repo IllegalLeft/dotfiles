@@ -47,11 +47,11 @@ set autoread
 " Map leader key
 let mapleader=","
 " Disable backup files
-set nobackup
-set nowritebackup
-set noswapfile
+"set nobackup
+"set nowritebackup
+"set noswapfile
 " Set statusline always visible
-set laststatus=2
+set laststatus=1
 " Don't redraw the screen during macros
 set lazyredraw
 " fast terminal connection
@@ -202,7 +202,7 @@ else
     set fillchars=vert:│
     set t_Co=256
     set background=dark
-    colorscheme jellybeans
+    colorscheme simp16
 endif
 " Colour column custom
 highlight ColorColumn ctermbg=DarkGrey
@@ -224,16 +224,18 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 
 
 " Airline
-let g:airline_theme = "jellybeans"
-if !exists('g:airline_sumbols')
-    let g:airline_symbols = {}
-endif
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_left_sep = '▓▒░'
-let g:airline_right_sep = '░▒▓'
-let g:airline_symbols.linenr = '#'
-let g:airline_symbols.maxlinenr = ''
-let g:airline_symbols.whitespace = 'Ξ'
+"let g:airline_theme = "jellybeans"
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline_symbols_ascii = 1
+"if !exists('g:airline_sumbols')
+"    let g:airline_symbols = {}
+"endif
+"let g:airline_left_sep = '▓▒░'
+"let g:airline_right_sep = '░▒▓'
+"let g:airline_symbols.linenr = '#'
+"let g:airline_symbols.maxlinenr = ''
+"let g:airline_symbols.whitespace = 'Ξ'
+"let g:airline_symbols.readonly = 'RO'
 
 " CoVim
 "let CoVim_default_name = "Sam"

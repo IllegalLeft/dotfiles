@@ -1,0 +1,38 @@
+# Scheme:       Coo
+# Created By:   Samuel Volk
+
+colors:
+    primary:    "blue"
+    secondary:  "green"
+    background: "#1d1b26" #"#0d0b16"
+    foreground: "#b1b9cd"
+    black:
+        normal: "#29292a"
+        bold:   "#454951"
+# yellow
+    red:
+        normal: "#a5ac2a"
+        bold:   "#cfd827"
+# light green
+    green:
+        normal: "#769a28"
+        bold:   "#95cb22"
+# green
+    yellow:
+        normal: "#1a7e5a"
+        bold:   "#16a974"
+# blue
+    blue:
+        normal: "#254a75"
+        bold:   "#24558e"
+# deep blue
+    magenta:
+        normal: "#223a8b"
+        bold:   "#1a3cad"
+# cyanish blue?
+    cyan:
+        normal: "#176088"
+        bold:   "#1878ad"
+    white:
+        normal: "#797f8a"
+        bold:   "#b6b8bd"

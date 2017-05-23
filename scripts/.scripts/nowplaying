@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# pop up notification for current song status for MPD
+notify-send "Now Playing (MPD)" "$(mpc)"

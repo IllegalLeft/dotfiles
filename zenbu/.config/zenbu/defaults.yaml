@@ -76,5 +76,5 @@ text_primary:         "{{ colors.primary }}"
 text_secondary:       "{{ colors.secondary }}"
 
 border_primary:    "{{ colors[colors.primary].bold }}"
-border_secondary:  "{{ colors[colors.primary].normal }}"
+border_secondary:  "{{ colors.black.bold }}"
 

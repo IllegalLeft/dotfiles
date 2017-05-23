@@ -27,6 +27,7 @@ urxvt.scrollBar: false
 urxvt.internalBorder: 5
 ! Fonts
 urxvt.font: xft:{{ font }}:size={{ fontsize }}
+urxvt.boldFont:
 
 ! Xft
 xft.dpi:        96

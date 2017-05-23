@@ -14,6 +14,8 @@ bindkey -v
 #devkit
 export DEVKITPRO='/opt/devkitpro'
 export DEVKITARM='/opt/devkitpro/devkitARM'
+#tonclib
+export TONCLIB='/opt/tonclib'
 #Rhisk
 export RHISK_COMM='zenbu'
 
@@ -32,8 +34,8 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 # Prompt
 autoload -Uz colors
 colors
-PROMPT="%{$fg[cyan]%}Φ %{$fg_no_bold[blue]%}%c%{$reset_color%} %# "
-RPROMPT="%{$fg_bold[black]%}[%{$fg_no_bold[yellow]%}%n%{$reset_color%}%{$fg_bold[black]%}]%{$reset_color%}"
+PROMPT="%{$fg[cyan]%}%{$fg_no_bold[blue]%}%c%{$reset_color%} %# "
+#RPROMPT="%{$fg_bold[black]%}[%{$fg_no_bold[yellow]%}%n%{$reset_color%}%{$fg_bold[black]%}]%{$reset_color%}"
 
 # completion
 zstyle ':completion:*' completer _complete _ignored

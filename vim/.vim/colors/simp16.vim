@@ -1,13 +1,12 @@
-"     _                 _  __   
-" ___(_)_ __ ___  _ __ / |/ /_  
-"/ __| | '_ ` _ \| '_ \| | '_ \ 
+"     _                 _  __
+" ___(_)_ __ ___  _ __ / |/ /_
+"/ __| | '_ ` _ \| '_ \| | '_ \
 "\__ \ | | | | | | |_) | | (_) |
-"|___/_|_| |_| |_| .__/|_|\___/ 
-"                |_|            
-" simp16
-" By: Samuel Volk
-" Last Edited: Friday, November 4, 2016
-" Description: Simple 16 color scheme with very little highlighting.
+"|___/_|_| |_| |_| .__/|_|\___/
+" simp16         |_|
+" By:           Samuel Volk
+" Last Edited:  March 27, 2017
+" Description:  Simple 16 color scheme with very little highlighting.
 "
 
 hi clear

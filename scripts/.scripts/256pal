@@ -1,0 +1,57 @@
+#!/bin/bash
+
+printf "\e[30m"
+# 16 colors
+for i in {0..15}; do
+    printf "\e[48;5;${i}m%*u" 4 "${i}"
+done
+printf "\n"
+
+# 256 colors
+a=16 b=52 c=88
+for line in {0..5}; do
+    printf "\e[30m"
+    for i in {0..5}; do
+        printf "\e[48;5;${a}m%*u" 4 "${a}"
+        a=$((a+1))
+    done
+    printf "\e[0;30m "
+    for i in {0..5}; do
+        printf "\e[48;5;${b}m%*u" 4 "${b}"
+        b=$((b+1))
+    done
+    printf "\e[0;30m "
+    for i in {0..5}; do
+        printf "\e[48;5;${c}m%*u" 4 "${c}"
+        c=$((c+1))
+    done
+    printf "\n"
+done
+printf "\n"
+a=124 b=160 c=196
+for line in {0..5}; do
+    printf "\e[30m"
+    for i in {0..5}; do
+        printf "\e[48;5;${a}m%*u" 4 "${a}"
+        a=$((a+1))
+    done
+    printf "\e[0;30m "
+    for i in {0..5}; do
+        printf "\e[48;5;${b}m%*u" 4 "${b}"
+        b=$((b+1))
+    done
+    printf "\e[0;30m "
+    for i in {0..5}; do
+        printf "\e[48;5;${c}m%*u" 4 "${c}"
+        c=$((c+1))
+    done
+    printf "\e[0m\n"
+done
+printf "\n"
+
+#Greyscale
+printf "\e[30m" # black fg
+for i in {232..255}; do
+    printf "\e[48;5;${i}m%*u" 4 "${i}"
+done
+printf "\n"

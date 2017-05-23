@@ -1,0 +1,3 @@
+#!/bin/sh
+
+notify-send "Herbstluftwm Layout" "$(herbstclient layout)"
