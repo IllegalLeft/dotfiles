@@ -16,19 +16,52 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     " Let vundle manage itself
     Plugin 'gmarik/Vundle.vim'
     " My Bundles here:
+    " Functionality
+    "Plugin 'FredKSchott/CoVim'	            " collaborative editing
+    Plugin 'tpope/vim-fugitive'		        " git commands inside vim
+    Plugin 'scrooloose/nerdtree'	        " filebrowser
+    Plugin 'ctrlpvim/ctrlp.vim'             " fuzzy search
+    " Syntax
+    Plugin 'zaiste/tmux.vim'                " tmux syntax
     " Cosmetic
     "Plugin 'flazz/vim-colorschemes'         " colorschemes
     "Plugin 'mhinz/vim-startify'             " start page
     Plugin 'vim-airline/vim-airline'        " status line
     Plugin 'vim-airline/vim-airline-themes'
     "Plugin 'chriskempson/base16-vim'        " Base16 vim colorschemes
-    " Syntax
-    Plugin 'zaiste/tmux.vim'                " tmux syntax
-    " Functionality
-    "Plugin 'FredKSchott/CoVim'	            " collaborative editing
-    Plugin 'tpope/vim-fugitive'		        " git commands inside vim
-    Plugin 'scrooloose/nerdtree'	        " filebrowser
-    Plugin 'ctrlpvim/ctrlp.vim'             " fuzzy search
+    " Colorschemes
+    Plugin 'andreasvc/vim-256noir'
+    Plugin 'romainl/Apprentice'
+    Plugin 'sjl/badwolf'                    " badwolf & goodwolf
+    Plugin 'xero/blaquemagick.vim'
+    Plugin 'baskerville/bubblegum'
+    Plugin 'marciomazza/vim-brogrammer-theme'
+    Plugin 'zefei/cake16'
+    Plugin 'vim-scripts/donbass.vim'
+    Plugin 'dracula/vim'
+    Plugin 'vim-scripts/ecostation'
+    Plugin 'vim-scripts/Elda'
+    Plugin 'hachy/eva01.vim'
+    Plugin 'fcpg/vim-fahrenheit'
+    Plugin 'john2x/flatui.vim'
+    Plugin 'whatyouhide/vim-gotham'
+    Plugin 'morhetz/gruvbox'
+    Plugin 'noahfrederick/vim-hemisu'
+    Plugin 'w0ng/vim-hybrid'
+    Plugin 'nanotech/jellybeans.vim'
+    Plugin 'sickill/vim-monokai'
+    Plugin 'bruth/vim-newsprint-theme'
+    Plugin 'reedes/vim-colors-pencil'
+    Plugin 'owickstrom/vim-colors-paramount'
+    Plugin 'ikaros/smpl-vim'
+    Plugin 'daddye/soda.vim'
+    Plugin 'xero/sourcerer.vim'
+    Plugin 'vim-scripts/summerfruit256.vim'
+    Plugin 'nice/sweater'
+    Plugin 'jacoborus/tender.vim'
+    Plugin 'mtgldk/wikipedia.vim'
+    Plugin 'carlson-erik/wolfpack'
+
     " All of your Plugins must be added before the following line
     call vundle#end()            " required
     filetype plugin indent on    " required
@@ -51,7 +84,7 @@ let mapleader=","
 "set nowritebackup
 "set noswapfile
 " Set statusline always visible
-set laststatus=1
+set laststatus=2
 " Don't redraw the screen during macros
 set lazyredraw
 " fast terminal connection
@@ -173,8 +206,8 @@ function! ArtMode()
     set virtualedit=all
     set colorcolumn=80
 endfunction
-command ArtMode : call ArtMode()
-" MUSHcode shrink - Leader + r
+command! ArtMode : call ArtMode()
+" MUSHcode shrink - Leader + t
 function! MUSHcodeShrink()
     %s/\r\|\t\|\n\|\s\s\+//g   " remove \r, \t, \n, and multiple \s (2 or more)
     %y+
@@ -189,7 +222,7 @@ function! DeleteTrailingWS()
     %s/\s\+$//ge
     exe "normal `z"
 endfunc
-command DeleteTrailingWS : call DeleteTrailingWS()
+command! DeleteTrailingWS : call DeleteTrailingWS()
 
 
 " Theme
@@ -202,7 +235,7 @@ else
     set fillchars=vert:│
     set t_Co=256
     set background=dark
-    colorscheme simp16
+    colorscheme jellybeans
 endif
 " Colour column custom
 highlight ColorColumn ctermbg=DarkGrey
@@ -227,13 +260,14 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 "let g:airline_theme = "jellybeans"
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline_symbols_ascii = 1
-"if !exists('g:airline_sumbols')
-"    let g:airline_symbols = {}
-"endif
+if !exists('g:airline_sumbols')
+    let g:airline_symbols = {}
+endif
 "let g:airline_left_sep = '▓▒░'
 "let g:airline_right_sep = '░▒▓'
-"let g:airline_symbols.linenr = '#'
-"let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.linenr = '#'
+let g:airline_symbols.linenr = ''
+let g:airline_symbols.maxlinenr = '☰'
 "let g:airline_symbols.whitespace = 'Ξ'
 "let g:airline_symbols.readonly = 'RO'
 

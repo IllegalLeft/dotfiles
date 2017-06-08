@@ -19,8 +19,9 @@ endif
 
 let g:colors_name = "simp16"
 
+" 256 Colors
 " Vim
-hi Normal       cterm=NONE      ctermfg=Gray       ctermbg=NONE
+hi Normal       cterm=NONE      ctermfg=Gray        ctermbg=NONE
 hi ModeMsg      ctermfg=White   ctermbg=NONE
 " Cursor
 hi Cursor       cterm=reverse   ctermfg=NONE        ctermbg=NONE
@@ -72,3 +73,57 @@ hi Type             cterm=NONE      ctermfg=None
 hi Error        ctermfg=White   ctermbg=Red
 hi Todo         ctermfg=Black   ctermbg=White
 
+
+" GUI Colors
+" Vim
+hi Normal       gui=NONE      guifg=Gray        guibg=#141414
+hi ModeMsg      guifg=White   guibg=NONE
+" Cursor
+hi Cursor       gui=reverse   guifg=NONE        guibg=NONE
+hi lCursor      gui=NONE      guifg=NONE        guibg=Cyan
+hi CursorLine   gui=NONE      guifg=NONE        guibg=Black
+hi CursorLineNr gui=NONE      guifg=White        guibg=NONE
+hi CursorColumn gui=NONE      guifg=NONE        guibg=DarkGray
+" Diff
+hi DiffAdd      guifg=Green       guibg=NONE
+hi DiffChange   guifg=Yellow      guibg=NONE
+hi DiffDelete   guifg=Red         guibg=NONE
+hi DiffText     guifg=Blue        guibg=NONE
+" Folds
+hi Folded       gui=NONE      guifg=LightGrey   guibg=DarkGrey
+hi FoldColumn   gui=NONE      guifg=LightGrey   guibg=DarkGrey
+" Searching
+hi Search       guifg=Black       guibg=White
+hi IncSearch    guifg=NONE        guibg=NONE
+" Statusline
+hi StatusLine   gui=NONE      guifg=Black       guibg=White
+hi StatusLineNC gui=NONE      guifg=Black       guibg=DarkGrey
+" Tabs
+hi TabLine      gui=NONE      guifg=White       guibg=DarkGrey
+hi TabLinefill  gui=NONE      guifg=White       guibg=DarkGrey
+hi TabLineSel   gui=NONE      guifg=Black       guibg=Grey
+" Misc
+hi ColorColumn  guifg=Blue        guibg=Grey
+hi Directory    guifg=Blue        guibg=NONE
+hi EndOfBuffer  guifg=Blue        guibg=NONE
+hi LineNr       guifg=DarkGrey    guibg=Black
+hi MoreMsg      guifg=DarkBlue    guibg=NONE
+hi VertSplit    guifg=DarkGrey    guibg=LightGrey
+hi Visual       gui=reverse       guifg=NONE        guibg=DarkGrey
+hi WarningMsg   guifg=DarkRed     guibg=NONE
+hi WildMenu     gui=NONE          guifg=Black       guibg=DarkGrey
+
+" Syntax
+hi Comment          gui=NONE      guifg=#505050
+hi Constant         gui=NONE      guifg=White
+hi Identifier       gui=NONE      guifg=NONE
+hi PreProc          gui=NONE      guifg=NONE
+hi Special          gui=NONE      guifg=Grey
+hi SpecialComment   gui=NONE      guifg=Grey
+hi SpecialKey       gui=NONE      guifg=Grey
+hi Debug            gui=NONE      guifg=Grey
+hi Statement        gui=NONE      guifg=NONE
+hi Type             gui=NONE      guifg=NONE
+
+hi Error        guifg=White   guibg=Red
+hi Todo         guifg=Black   guibg=White

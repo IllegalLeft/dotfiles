@@ -1,16 +1,16 @@
-"              _                    
-"   __ ___   _(_)_ __ ___  _ __ ___ 
+"              _
+"   __ ___   _(_)_ __ ___  _ __ ___
 "  / _` \ \ / / | '_ ` _ \| '__/ __|
-" | (_| |\ V /| | | | | | | | | (__ 
+" | (_| |\ V /| | | | | | | | | (__
 "(_)__, | \_/ |_|_| |_| |_|_|  \___|
-"  |___/                            
+"  |___/
 " .gvimrc
 "
 " Auto reload of .gvimrc file
 autocmd! bufwritepost .gvimrc source %
 
 " UI
-" default = egmrLtT
+" default is egmrLtT
 " remove toolbar and scrollbars
 set guioptions=egmt
 " e - tabpages/line
@@ -20,10 +20,11 @@ set guioptions=egmt
 
 " Theme
 set bg=dark
-colorscheme seti
-set guifont=artwiz\ smoothansi\ 8
+colorscheme jellybeans
+set guifont=Source\ Code\ Pro\ Medium\ 8
 set fillchars=vert:│
 
 " Airline
-"AirlineTheme papercolor
-"let g:airline_powerline_fonts = 1
+set laststatus=2
+AirlineTheme minimalist
+let g:airline_powerline_fonts = 1

@@ -23,6 +23,7 @@ hc keyunbind --all
 Mod=Mod4   # Use the super key as the main modifier
 
 hc keybind $Mod-Shift-q quit
+hc keybind $Mod-Pause spawn systemctl poweroff
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
 hc keybind $Mod-Return spawn ${TERMINAL:-xterm} # use your $TERMINAL with xterm as fallback
@@ -171,3 +172,4 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 #    # start it on each monitor
 #    "$panel" $monitor &
 #done
+~/.config/herbstluftwm/sambar.sh
