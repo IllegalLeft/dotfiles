@@ -26,7 +26,9 @@ alias view='vim -R'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+alias tree='tree -C'
 alias mkdir='mkdir -p'
+alias pacman='pacman --color auto'
 
 # arch pkgfile command-not-found hook
 source /usr/share/doc/pkgfile/command-not-found.bash
