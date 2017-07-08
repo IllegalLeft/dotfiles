@@ -1,0 +1,2 @@
+#!/bin/sh
+cp437 tt++ -G ~/.tintin/sassmush.tin

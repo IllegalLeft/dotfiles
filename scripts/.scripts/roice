@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# needs xrdb
+
+resources=$(xrdb -query)
+
+for i in `seq 0 15`; do
+    color[$i]=$(echo "$resources" | sed -n -e "s/.*.color${i}:\s\(#[0-9a-fA-F]\)/\1/p")
+done
+
+echo
+for i in `seq 0 7`; do
+    if [ "$i" -eq 0 ]; then
+        echo -en "\e[48;5;15;38;5;${i}m ██ ${color[${i}]} \e[0m"
+        echo -en "\e[48;5;15;38;5;$((${i}+8))m ██ ${color[$((${i}+8))]} \e[0m\n"
+    else
+        echo -en "\e[38;5;${i}m ██ ${color[${i}]} \e[0m"
+        echo -en "\e[38;5;$((${i}+8))m ██ ${color[$((${i}+8))]} \e[0m\n"
+    fi
+done
+echo

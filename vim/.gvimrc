@@ -20,8 +20,8 @@ set guioptions=egmt
 
 " Theme
 set bg=dark
-colorscheme jellybeans
-set guifont=Source\ Code\ Pro\ Medium\ 8
+colorscheme hybrid
+set guifont=Source\ Code\ Pro\ Medium\ 9
 set fillchars=vert:│
 
 " Airline

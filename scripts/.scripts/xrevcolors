@@ -1,0 +1,36 @@
+#!/bin/bash
+#
+# xrevcolors
+# Sets colors in xterm window for default xterm colors using escape sequences
+# only, it's the reverse with white as background
+# Samuel Volk, 2016
+
+# foreground
+printf '\033]10;#000000\007'
+# background
+printf '\033]11;#ffffff\007'
+
+# black
+printf '\033]4;0;#000000\007'
+printf '\033]4;8;#7f7f7f\007'
+# red
+printf '\033]4;1;#cd0000\007'
+printf '\033]4;9;#ff0000\007'
+# green
+printf '\033]4;2;#00cd00\007'
+printf '\033]4;10;#00ff00\007'
+# yellow
+printf '\033]4;3;#cdcd00\007'
+printf '\033]4;11;#ffff00\007'
+# blue
+printf '\033]4;4;#0000ee\007'
+printf '\033]4;12;#5c5cff\007'
+# magenta
+printf '\033]4;5;#cd00cd\007'
+printf '\033]4;13;#ff00ff\007'
+# cyan
+printf '\033]4;6;#00cdcd\007'
+printf '\033]4;14;#00ffff\007'
+# white
+printf '\033]4;7;#e5e5e5\007'
+printf '\033]4;15;#ffffff\007'

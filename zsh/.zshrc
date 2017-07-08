@@ -1,7 +1,7 @@
-#           _              
-#   _______| |__  _ __ ___ 
+#           _
+#   _______| |__  _ __ ___
 #  |_  / __| '_ \| '__/ __|
-# _ / /\__ \ | | | | | (__ 
+# _ / /\__ \ | | | | | (__
 #(_)___|___/_| |_|_|  \___|
 #
 #.zshrc
@@ -31,7 +31,7 @@ alias mkdir='mkdir -p'
 alias pacman='pacman --color auto'
 
 # arch pkgfile command-not-found hook
-source /usr/share/doc/pkgfile/command-not-found.bash
+#source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # Prompt
 autoload -Uz colors
