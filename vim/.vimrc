@@ -235,7 +235,7 @@ else
     set fillchars=vert:│
     set t_Co=256
     set background=dark
-    colorscheme jellybeans
+    colorscheme simp16
 endif
 " Colour column custom
 highlight ColorColumn ctermbg=DarkGrey
@@ -257,7 +257,7 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 
 
 " Airline
-"let g:airline_theme = "jellybeans"
+let g:airline_theme = "term"
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline_symbols_ascii = 1
 if !exists('g:airline_sumbols')

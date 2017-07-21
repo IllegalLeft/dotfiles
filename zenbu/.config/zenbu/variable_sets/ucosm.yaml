@@ -1,0 +1,31 @@
+# Scheme:   ucosm
+
+colors:
+    primary:    "green"
+    secondary:  "blue"
+    background: "#342a30"
+    foreground: "#b2b296"
+    black:
+        normal: "#342a30"
+        bold:   "#676757"
+    red:
+        normal: "#73313c"
+        bold:   "#a95966"
+    green:
+        normal: "#639255"
+        bold:   "#95ce84"
+    yellow:
+        normal: "#9fa873"
+        bold:   "#dee8a9"
+    blue:
+        normal: "#28475c"
+        bold:   "#4a6c84"
+    magenta:
+        normal: "#683257"
+        bold:   "#9c5a87"
+    cyan:
+        normal: "#85a6a6"
+        bold:   "#bee6e6"
+    white:
+        normal: "#b2b296"
+        bold:   "#f4f4d3"
