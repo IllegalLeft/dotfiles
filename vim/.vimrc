@@ -9,15 +9,12 @@
 " Plugins
 """"""""""
 if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
-    let g:hasVundle = 1
+    let g:hasVundle = 1     " Houston, we have Vundle
     " set the runtime path to include Vundle and initialize
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
-    " Let vundle manage itself
-    Plugin 'gmarik/Vundle.vim'
-    " My Bundles here:
+    Plugin 'gmarik/Vundle.vim'  " Let vundle manage itself
     " Functionality
-    "Plugin 'FredKSchott/CoVim'	            " collaborative editing
     Plugin 'tpope/vim-fugitive'		        " git commands inside vim
     Plugin 'scrooloose/nerdtree'	        " filebrowser
     Plugin 'ctrlpvim/ctrlp.vim'             " fuzzy search
@@ -28,30 +25,22 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     "Plugin 'mhinz/vim-startify'             " start page
     Plugin 'vim-airline/vim-airline'        " status line
     Plugin 'vim-airline/vim-airline-themes'
-    "Plugin 'chriskempson/base16-vim'        " Base16 vim colorschemes
     " Colorschemes
     Plugin 'andreasvc/vim-256noir'
     Plugin 'romainl/Apprentice'
     Plugin 'sjl/badwolf'                    " badwolf & goodwolf
     Plugin 'xero/blaquemagick.vim'
-    Plugin 'baskerville/bubblegum'
     Plugin 'marciomazza/vim-brogrammer-theme'
     Plugin 'zefei/cake16'
     Plugin 'vim-scripts/donbass.vim'
-    Plugin 'dracula/vim'
-    Plugin 'vim-scripts/ecostation'
     Plugin 'vim-scripts/Elda'
-    Plugin 'hachy/eva01.vim'
     Plugin 'fcpg/vim-fahrenheit'
-    Plugin 'john2x/flatui.vim'
-    Plugin 'whatyouhide/vim-gotham'
     Plugin 'morhetz/gruvbox'
     Plugin 'noahfrederick/vim-hemisu'
     Plugin 'w0ng/vim-hybrid'
     Plugin 'nanotech/jellybeans.vim'
     Plugin 'sickill/vim-monokai'
     Plugin 'bruth/vim-newsprint-theme'
-    Plugin 'reedes/vim-colors-pencil'
     Plugin 'owickstrom/vim-colors-paramount'
     Plugin 'ikaros/smpl-vim'
     Plugin 'daddye/soda.vim'
@@ -59,89 +48,49 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     Plugin 'vim-scripts/summerfruit256.vim'
     Plugin 'nice/sweater'
     Plugin 'jacoborus/tender.vim'
-    Plugin 'mtgldk/wikipedia.vim'
     Plugin 'carlson-erik/wolfpack'
+    Plugin 'bcicen/vim-vice'
 
-    " All of your Plugins must be added before the following line
     call vundle#end()            " required
     filetype plugin indent on    " required
 else
     let g:hasVundle = 0
 endif
 
-
 " Vim
-""""""
-set nocompatible
-" Auto reload of .vimrc file
-"autocmd! bufwritepost .vimrc source %
-" Set auto read when file outside is changed
-set autoread
-" Map leader key
+"""""""
+set nocompatible    " this is vim, not vi
+"autocmd! bufwritepost .vimrc source %  " Auto reload of .vimrc file
+set autoread    " read file if changed outside of vim
 let mapleader=","
-" Disable backup files
-"set nobackup
-"set nowritebackup
-"set noswapfile
-" Set statusline always visible
-set laststatus=2
-" Don't redraw the screen during macros
-set lazyredraw
-" fast terminal connection
-set ttyfast
+set laststatus=1    " statusbar when there are two windows
+set lazyredraw  " screen will not redraw during macros, registers and other cmds
+set ttyfast     " fast terminal connection
+set belloff=esc " get rid of that bell when I accidentally press esc too much
 
 
 " Editor
 """""""""
-" Enable mouse
-set mouse=a
-" tabstop
+set mouse=nv    " mouse enabled in normal and visual mode
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set shiftround
 set expandtab
-" Line length to 79 chars
-set textwidth=79 " used by gd(?)
-" Colour the 80th coloumn
-"set colorcolumn=80
-" highlight cursour line
-"set cursorline
-" no wrap on load
-set nowrap
-" no wrap when typing
-set fo-=t
-" line numbers
-"set number
-" buffer becomes hidden when abandoned
-set hidden
-" command autocomplete like shell
+set textwidth=79    " max witdth of text that is being inserted
+set hidden      " buffer becomes hidden when abandoned
 set wildmenu
 set wildmode=list:longest
-" ignore some files vim has no use to edit
-set wildignore+=*.dll,*.msi
-set wildignore+=*.o,*.exe
-set wildignore+=*.ape,*.flac,*.mp3,*.ogg,*.wav
-set wildignore+=*.bmp,*.gif,*.jpeg,*.jpg,*.ico,*.png,*.psd
-set wildignore+=*.mov,*.mp4,*.mpeg,*.webm
-set wildignore+=*.gz,*.tar,*.tar.gz,*.zip
-" ruler/status line
-set ruler
-" Set history & undo history limits
-set history=700
-set undolevels=700
-" Highlight search results
-set hlsearch
-" Search while being typed out
-set incsearch
-" Set search case insensitive
-set ignorecase
-" Be smart about cases when searching
-set smartcase
-" Autoindents
+set ruler       " show line and column of cursor position
+set history=200
+set undolevels=100
+set hlsearch    " highlight search results
+set incsearch   " Search while being typed out
+set ignorecase  " ignore case in search patterns
+set smartcase   " override ignorecase setting if pattern has uppercase chars
 set autoindent
-" Show matching brackets/braces/etc
-set showmatch
+set showmatch   " show matching brackets, braces, etc
+
 
 " Mappings
 """""""""""
@@ -227,13 +176,14 @@ command! DeleteTrailingWS : call DeleteTrailingWS()
 
 " Theme
 """"""""
-" TTY
 if ($TERM == "linux")
+    " TTY
     color simp16
-" Regular terminal
 else
+    " Regular terminal
     set fillchars=vert:│
     set t_Co=256
+    let base16colorspace=256 " Access colors present in 256 colorspace
     set background=dark
     colorscheme simp16
 endif
@@ -243,7 +193,6 @@ highlight ColorColumn ctermbg=DarkGrey
 
 " Syntax
 """""""""
-" Syntax Highlighting
 filetype off
 filetype plugin indent on
 syntax on
@@ -257,7 +206,7 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 
 
 " Airline
-let g:airline_theme = "term"
+let g:airline_theme = "minimalist"
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline_symbols_ascii = 1
 if !exists('g:airline_sumbols')
@@ -270,25 +219,3 @@ let g:airline_symbols.linenr = ''
 let g:airline_symbols.maxlinenr = '☰'
 "let g:airline_symbols.whitespace = 'Ξ'
 "let g:airline_symbols.readonly = 'RO'
-
-" CoVim
-"let CoVim_default_name = "Sam"
-
-" netwr
-let g:netwr_liststyle = 3
-let g:netwr_banner = 0
-
-" Startify
-"let g:startify_disable_at_vimenter = 0
-"let g:startify_files_number = 10
-"hi StartifyHeader   ctermfg=034
-"let g:startify_custom_header = [
-"    \ '                  ',
-"    \ ' $$$$  $$$$       ',
-"    \ '  $$   a$P        ',
-"    \ '  $$ ,$$''         ',
-"    \ '  $$a$P  *  $+a+a ',
-"    \ '  $$$''   $  $ $ $ ',
-"    \ '   ~              ',
-"    \ '                  ',
-"    \ ]

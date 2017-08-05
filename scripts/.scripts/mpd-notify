@@ -1,0 +1,22 @@
+#!/bin/bash
+
+oldstring=""
+
+while : ; do
+    # wait until new mpd event
+    mpc idle > /dev/null
+
+    song=$(mpc current)
+    if [$oldstring != $string]; then
+        oldsong=$song
+        file="$(mpc current -f "%file%")"
+        art="/tmp/albumart.png"
+
+        if [ -e $art ]; then
+            rm $art
+        fi
+        ffmpeg -v quiet -y -i "/home/sam/music/${file}" -s 50x50 $art > /dev/null
+
+        notify-send -i "$art" "Now Playing" "$song"
+    fi
+done

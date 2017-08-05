@@ -1,4 +1,5 @@
 #vim stuff
+*.swp
 vim/.vim/bundle/*
 vim/.vim/session/*
 vim/.vim/.netrwhist

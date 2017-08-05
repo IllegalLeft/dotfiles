@@ -37,7 +37,7 @@ xft.hinting:    true
 xft.hintstyle:  hintslight
 
 URxvt*.perl-ext-common: default,matcher
-URxvt*.url-launcher:    qutebrowser
+!URxvt*.url-launcher:    chromium
 URxvt*.matcher.button:  1
 URxvt*.transparent:     false
 

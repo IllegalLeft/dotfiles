@@ -29,6 +29,7 @@ hi lCursor      cterm=NONE      ctermfg=NONE        ctermbg=Cyan
 hi CursorLine   cterm=NONE      ctermfg=NONE        ctermbg=Black
 hi CursorLineNr cterm=NONE      ctermfg=White        ctermbg=NONE
 hi CursorColumn cterm=NONE      ctermfg=NONE        ctermbg=DarkGrey
+hi MatchParen   cterm=NONE      ctermfg=White       ctermbg=NONE
 " Diff
 hi DiffAdd      ctermfg=Green       ctermbg=NONE
 hi DiffChange   ctermfg=Yellow      ctermbg=NONE
@@ -84,6 +85,7 @@ hi lCursor      gui=NONE      guifg=NONE        guibg=Cyan
 hi CursorLine   gui=NONE      guifg=NONE        guibg=Black
 hi CursorLineNr gui=NONE      guifg=White        guibg=NONE
 hi CursorColumn gui=NONE      guifg=NONE        guibg=DarkGray
+hi MatchParen   gui=NONE        guifg=White     guibg=NONE
 " Diff
 hi DiffAdd      guifg=Green       guibg=NONE
 hi DiffChange   guifg=Yellow      guibg=NONE

@@ -1,0 +1,51 @@
+# Scheme:   base16-eighties
+# Source: https://chriskempson.github.io/base16/
+#
+# base00 #2d2d2d
+# base01 #393939
+# base02 #515151
+# base03 #747369
+# base04 #a09f93
+# base05 #d3d0c8
+# base06 #e8e6df
+# base07 #f2f0ec
+# base08 #f2777a
+# base09 #f99157
+# base0A #ffcc66
+# base0B #99cc99
+# base0C #66cccc
+# base0D #6699cc
+# base0E #cc99cc
+# base0F #d27b53
+
+colors:
+    primary:    "red"
+    secondary:  "yellow"
+
+    foreground: "#d3d0c8"
+    background: "#2d2d2d"
+
+    black:
+        normal: "#2d2d2d"
+        bold:   "#747369"
+    red:
+        normal: "#f2777a"
+        bold:   "#f2777a"
+    green:
+        normal: "#99cc99"
+        bold:   "#99cc99"
+    yellow:
+        normal: "#ffcc66"
+        bold:   "#ffcc66"
+    blue:
+        normal: "#6699cc"
+        bold:   "#6699cc"
+    magenta:
+        normal: "#cc99cc"
+        bold:   "#cc99cc"
+    cyan:
+        normal: "#66cccc"
+        bold:   "#66cccc"
+    white:
+        normal: "#d3d0c8"
+        bold:   "#f2f0ec"

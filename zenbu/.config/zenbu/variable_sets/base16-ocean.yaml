@@ -1,0 +1,53 @@
+# Scheme:   base16-ocean
+# Source: https://chriskempson.github.io/base16/
+#
+# base00 #2b303b
+# base01 #343d46
+# base02 #4f5b66
+# base03 #65737e
+# base04 #a7adba
+# base05 #c0c5ce
+# base06 #dfe1e8
+# base07 #eff1f5
+# base08 #bf616a
+# base09 #d08770
+# base0A #ebcb8b
+# base0B #a3be8c
+# base0C #96b5b4
+# base0D #8fa1b3
+# base0E #b48ead
+# base0F #ab7967
+
+
+
+colors:
+    primary:    "red"
+    secondary:  "yellow"
+
+    foreground: "#c0c5ce"
+    background: "#2b303b"
+
+    black:
+        normal: "#2b303b"
+        bold:   "#65737e"
+    red:
+        normal: "#bf616a"
+        bold:   "#bf616a"
+    green:
+        normal: "#a3be8c"
+        bold:   "#a3be8c"
+    yellow:
+        normal: "#ebcb8b"
+        bold:   "#ebcb8b"
+    blue:
+        normal: "#8fa1b3"
+        bold:   "#8fa1b3"
+    magenta:
+        normal: "#b48ead"
+        bold:   "#b48ead"
+    cyan:
+        normal: "#96b5b4"
+        bold:   "#96b5b4"
+    white:
+        normal: "#c0c5ce"
+        bold:   "#eff1f5"
