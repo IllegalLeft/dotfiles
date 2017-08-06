@@ -62,34 +62,34 @@ endif
 set nocompatible    " this is vim, not vi
 "autocmd! bufwritepost .vimrc source %  " Auto reload of .vimrc file
 set autoread    " read file if changed outside of vim
-let mapleader=","
+set belloff=esc " get rid of that bell when I accidentally press esc too much
 set laststatus=1    " statusbar when there are two windows
 set lazyredraw  " screen will not redraw during macros, registers and other cmds
+let mapleader=","
 set ttyfast     " fast terminal connection
-set belloff=esc " get rid of that bell when I accidentally press esc too much
 
 
 " Editor
 """""""""
+set autoindent
+set expandtab
+set hidden      " buffer becomes hidden when abandoned
+set history=200
+set hlsearch    " highlight search results
+set incsearch   " Search while being typed out
+set ignorecase  " ignore case in search patterns
 set mouse=nv    " mouse enabled in normal and visual mode
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set shiftround
-set expandtab
+set ruler       " show line and column of cursor position
+set smartcase   " override ignorecase setting if pattern has uppercase chars
+set showmatch   " show matching brackets, braces, etc
 set textwidth=79    " max witdth of text that is being inserted
-set hidden      " buffer becomes hidden when abandoned
+set undolevels=100
 set wildmenu
 set wildmode=list:longest
-set ruler       " show line and column of cursor position
-set history=200
-set undolevels=100
-set hlsearch    " highlight search results
-set incsearch   " Search while being typed out
-set ignorecase  " ignore case in search patterns
-set smartcase   " override ignorecase setting if pattern has uppercase chars
-set autoindent
-set showmatch   " show matching brackets, braces, etc
 
 
 " Mappings
