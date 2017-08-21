@@ -15,7 +15,7 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     call vundle#begin()
     Plugin 'gmarik/Vundle.vim'  " Let vundle manage itself
     " Functionality
-    Plugin 'tpope/vim-fugitive'		        " git commands inside vim
+    "Plugin 'tpope/vim-fugitive'		        " git commands inside vim
     Plugin 'scrooloose/nerdtree'	        " filebrowser
     Plugin 'ctrlpvim/ctrlp.vim'             " fuzzy search
     " Syntax
@@ -23,8 +23,8 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     " Cosmetic
     "Plugin 'flazz/vim-colorschemes'         " colorschemes
     "Plugin 'mhinz/vim-startify'             " start page
-    Plugin 'vim-airline/vim-airline'        " status line
-    Plugin 'vim-airline/vim-airline-themes'
+    "Plugin 'vim-airline/vim-airline'        " status line
+    "Plugin 'vim-airline/vim-airline-themes'
     " Colorschemes
     Plugin 'andreasvc/vim-256noir'
     Plugin 'romainl/Apprentice'
@@ -59,7 +59,6 @@ endif
 
 " Vim
 """""""
-set nocompatible    " this is vim, not vi
 "autocmd! bufwritepost .vimrc source %  " Auto reload of .vimrc file
 set autoread    " read file if changed outside of vim
 set belloff=esc " get rid of that bell when I accidentally press esc too much
@@ -69,10 +68,10 @@ let mapleader=","
 set ttyfast     " fast terminal connection
 
 
-" Editor
-"""""""""
+" Editing
+""""""""""
 set autoindent
-set expandtab
+set expandtab   " expand tabs into spaces
 set hidden      " buffer becomes hidden when abandoned
 set history=200
 set hlsearch    " highlight search results
@@ -94,17 +93,6 @@ set wildmode=list:longest
 
 " Mappings
 """""""""""
-" Save - Leader + w
-noremap <Leader>w :update<CR>
-vnoremap <Leader>w <C-C>:update<CR>
-inoremap <Leader>w <C-O>:update<CR>
-
-" Quit - Ctrl + q
-noremap <Leader>q :quit<CR>
-inoremap <Leader>q <C-O>:quit<CR>
-vnoremap <Leader>q <C-O>:update<CR>
-" Sort - Leader + S
-vnoremap <Leader>S :sort<CR>
 " Easier code block movement with < and >
 vnoremap < <gv
 vnoremap > >gv
@@ -115,18 +103,6 @@ inoremap <Leader>m <C-O>:bnext<CR>
 noremap <Leader>n :bprevious<CR>
 vnoremap <Leader>n <C-O>:bprevious<CR>
 inoremap <Leader>n <C-O>:bprevious<CR>
-
-" Easier Buffer switching - Leader + F#
-noremap <Leader>1 <C-O>:buffer 1<CR>
-noremap <Leader>2 <C-O>:buffer 2<CR>
-noremap <Leader>3 <C-O>:buffer 3<CR>
-noremap <Leader>4 <C-O>:buffer 4<CR>
-noremap <Leader>5 <C-O>:buffer 5<CR>
-noremap <Leader>6 <C-O>:buffer 6<CR>
-noremap <Leader>7 <C-O>:buffer 7<CR>
-noremap <Leader>8 <C-O>:buffer 8<CR>
-noremap <Leader>9 <C-O>:buffer 9<CR>
-noremap <Leader>0 <C-O>:buffer 10<CR>
 
 " Fugitive
 " map <Leader>g to enter git command
@@ -176,15 +152,10 @@ command! DeleteTrailingWS : call DeleteTrailingWS()
 
 " Theme
 """"""""
-if ($TERM == "linux")
-    " TTY
+set fillchars=vert:\ 
+if ($TERM == "linux")   " TTY
     color simp16
-else
-    " Regular terminal
-    set fillchars=vert:│
-    set t_Co=256
-    let base16colorspace=256 " Access colors present in 256 colorspace
-    set background=dark
+else                    " Regular terminal
     colorscheme simp16
 endif
 " Colour column custom

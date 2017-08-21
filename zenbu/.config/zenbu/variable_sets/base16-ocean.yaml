@@ -21,8 +21,8 @@
 
 
 colors:
-    primary:    "red"
-    secondary:  "yellow"
+    primary:    "blue"
+    secondary:  "green"
 
     foreground: "#c0c5ce"
     background: "#2b303b"

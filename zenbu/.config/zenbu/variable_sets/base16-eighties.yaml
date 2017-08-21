@@ -19,8 +19,8 @@
 # base0F #d27b53
 
 colors:
-    primary:    "red"
-    secondary:  "yellow"
+    primary:    "blue"
+    secondary:  "green"
 
     foreground: "#d3d0c8"
     background: "#2d2d2d"

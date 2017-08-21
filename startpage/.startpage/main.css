@@ -48,14 +48,14 @@ main {
     left: 40%;
     transform: translate(-40%, -60%); } }
 h1 {
-  color: #a6d2cd;
+  color: #dd7f15;
   font-family: "Nimbus Sans","Liberation Serif";
   font-size: 12px;
   font-weight: normal; 
   margin: 15px; }
 
 p {
-  color: #a6d2cd;
+  color: #dd7f15;
   font-family: "Nimbus Sans", "pxplus_ibm_vga8regular","Arial";
   font-size: 12px;
   letter-spacing: 0px;
@@ -77,7 +77,7 @@ li {
   margin: 0 5px; }
 
 .ansi {
-  color: #a6d2cd;
+  color: #dd7f15;
   font-family: "xos4 Terminus", "pxplus_ibm_vga8regular", monospace;
   font-size: 12px;
   font-weight: normal;
@@ -94,12 +94,12 @@ li {
   background-color: #545466; }
 
 .subh {
-  color: #d28a84;
+  color: #f7f7cc;
   margin-top: 5px;
   text-decoration: none;}
 
 a {
-  color: #87aaa6;
+  color: #ab6311;
   text-decoration: none;
   transition: .2s; }
 
