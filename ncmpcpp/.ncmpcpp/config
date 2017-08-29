@@ -7,45 +7,31 @@
 # ncmpcpp config
 
 
-# Controls
-mouse_support = "yes"
-
 # Directories
 mpd_music_dir = "/home/sam/music/"
-
-# Look
-centered_cursor = "yes"
-colors_enabled = "yes"
-progressbar_look = "─@⋅"
-#user_interface = "alternative"
-#playlist_display_mode = "classic"
-playlist_show_mpd_host = "no"
-playlist_show_remaining_time = "no"
-titles_visibility = "no"
-enable_window_title = "no"
-header_visibility = "yes"
-statusbar_visibility = "yes"
-display_bitrate = "no"
-display_remaining_time = "yes"
-#song_list_format = {%a - }|{%t}{$8%f$9}$R{$3(%l)$9}
-
-# Visualizer
-# fftw needed for spectrum
-#visualizer_fifo_path = "/tmp/mpd.fifo"
-#visualizer_output_name = "my_fifo"
-#visualizer_sync_interval = "30"
-#visualizer_in_stereo = "no"
-#visualizer_type = "ellipse" (spectrum/wave/wave_filled/ellipse)
-#visualizer_look = "█┃"
-
-# Editor
-external_editor = "/bin/vim"
-use_console_editor = "yes"
 
 # File Handling
 generate_win32_compatible_filenames = "yes"
 ignore_leading_the = "yes"
+ignore_diacritics = "yes"
 allow_for_physical_item_deletion = "yes"
+
+# Controls
+mouse_support = "yes"
+
+# Look
+centered_cursor = "yes"
+colors_enabled = "yes"
+progressbar_look = "─⋅─"
+user_interface = "classic"
+playlist_show_mpd_host = "no"
+playlist_show_remaining_time = "no"
+titles_visibility = "no"
+enable_window_title = "no"
+header_visibility = "no"
+statusbar_visibility = "yes"
+display_bitrate = "no"
+display_remaining_time = "no"
 
 # Colors
 empty_tag_color = cyan
@@ -61,3 +47,8 @@ statusbar_color = white
 alternative_ui_separator_color = black
 window_border_color = black
 active_window_border = white
+
+# Editor
+external_editor = "/bin/vim"
+use_console_editor = "yes"
+
