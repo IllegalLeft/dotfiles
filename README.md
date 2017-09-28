@@ -7,6 +7,8 @@
 ```
 *dotfiles*
 
+Managed with GNU stow.
+
 Includes:
 * bash
 * crawl
