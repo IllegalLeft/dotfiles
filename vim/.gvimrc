@@ -14,7 +14,7 @@ autocmd! bufwritepost .gvimrc source %
 " remove toolbar and scrollbars
 set guioptions=egmt
 " e - tabpages/line
-" g - grey meny items
+" g - grey menu items
 " m - menu bar is present
 " t - tear off menu items
 
@@ -25,6 +25,6 @@ set guifont=Source\ Code\ Pro\ Medium\ 9
 set fillchars=vert:│
 
 " Airline
-set laststatus=2
-AirlineTheme minimalist
-let g:airline_powerline_fonts = 1
+" set laststatus=2
+" AirlineTheme minimalist
+" let g:airline_powerline_fonts = 1

@@ -78,7 +78,6 @@ set hlsearch    " highlight search results
 set incsearch   " Search while being typed out
 set ignorecase  " ignore case in search patterns
 set mouse=nv    " mouse enabled in normal and visual mode
-set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set shiftround
@@ -156,9 +155,8 @@ set fillchars=vert:\
 if ($TERM == "linux")   " TTY
     color simp16
 else                    " Regular terminal
-    colorscheme simp16
+    colorscheme sixteen
 endif
-" Colour column custom
 highlight ColorColumn ctermbg=DarkGrey
 
 

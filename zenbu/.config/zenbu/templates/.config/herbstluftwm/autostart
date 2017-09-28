@@ -8,9 +8,8 @@ hc() {
 
 hc emit_hook reload
 
-#xsetroot -solid '#5A8E3A'
 exec ./.fehbg &
-exec mpd &
+#exec mpd &
 exec unclutter &
 
 # remove all existing keybindings
