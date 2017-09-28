@@ -1,16 +1,17 @@
 #!/bin/bash
 
-oldstring=""
+art="/tmp/albumart.png"
+oldsong=" "
 
-while : ; do
-    # wait until new mpd event
-    mpc idle > /dev/null
+while true; do
+    # wait until new mpd player(start/stop/seek) event
+    mpc idle player > /dev/null
 
     song=$(mpc current)
-    if [$oldstring != $string]; then
+
+    if [ "$oldsong" != "$song" ]; then
         oldsong=$song
         file="$(mpc current -f "%file%")"
-        art="/tmp/albumart.png"
 
         if [ -e $art ]; then
             rm $art
