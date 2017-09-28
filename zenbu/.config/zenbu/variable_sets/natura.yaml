@@ -1,0 +1,51 @@
+# Scheme:   Natura
+# Author:   Samuel Volk
+# Just blue and green
+#
+# DARK GREEN
+# #41614d
+# #37755b
+# #599b6b
+# #93c3bb CYAN (middle)
+# #89abc9
+# #6575b5
+# #556189
+# DARK BLUE
+#
+# BLACK/WHITE
+# #1f251b
+# #33394b // #5f6d75
+# #5f6d75 // #7f8d95
+# #a4b2c8
+
+colors:
+    primary:    "green"
+    secondary:  "magenta"
+
+    foreground: "#7f8d95"
+    background: "#1f251b"
+
+    black:
+        normal: "#1f251b"
+        bold:   "#43495b"
+    red:
+        normal: "#41614d"
+        bold:   "#41614d"
+    green:
+        normal: "#37755b"
+        bold:   "#37755b"
+    yellow:
+        normal: "#599b6b"
+        bold:   "#599b6b"
+    blue:
+        normal: "#93c3bb"
+        bold:   "#93c3bb"
+    magenta:
+        normal: "#89abc9"
+        bold:   "#89abc9"
+    cyan:
+        normal: "#6575b5"
+        bold:   "#6575b5"
+    white:
+        normal: "#7f8d95"
+        bold:   "#a4b2c8"
