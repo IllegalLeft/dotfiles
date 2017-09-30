@@ -18,6 +18,7 @@ Includes:
 * ranger
 * scripts
 * startpage
+* sxhkd
 * tmux
 * vim
 * weechat
