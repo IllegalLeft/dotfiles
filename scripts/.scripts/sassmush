@@ -1,2 +1,9 @@
 #!/bin/sh
+
+if [[ $TERM == *"screen"* ]] || [[ $TERM == *"tmux"* ]]
+then
+    tmux rename-window sassmush
+    tmux setw monitor-activity
+fi
+
 cp437 tt++ -G ~/.tintin/sassmush.tin

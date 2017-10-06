@@ -1,2 +1,9 @@
 #!/bin/sh
+
+if [[ $TERM == *"screen"* ]] || [[ $TERM == *"tmux"* ]]
+then
+    tmux rename-window 8bitmush
+    tmux setw monitor-activity
+fi
+
 cp437 tt++ -G ~/.tintin/8bit.tin
