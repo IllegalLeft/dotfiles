@@ -1,5 +1,7 @@
-# Scheme:   Solicit
-# Author:   Samuel Volk
+# Scheme: Solicit
+# Author: Samuel Volk
+
+name: "solicit"
 
 colors:
     primary:    "cyan"

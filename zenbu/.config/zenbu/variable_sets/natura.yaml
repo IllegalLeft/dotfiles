@@ -1,5 +1,5 @@
-# Scheme:   Natura
-# Author:   Samuel Volk
+# Scheme: Natura
+# Author: Samuel Volk
 # Just blue and green
 #
 # DARK GREEN
@@ -17,6 +17,8 @@
 # #33394b // #5f6d75
 # #5f6d75 // #7f8d95
 # #a4b2c8
+
+name: "natura"
 
 colors:
     primary:    "green"

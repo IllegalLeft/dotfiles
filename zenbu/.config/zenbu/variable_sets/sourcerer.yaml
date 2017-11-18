@@ -3,6 +3,8 @@
 # Based on Sorcerer by Jeet Sukumaran (http://jeetworks.org)
 # Based on Mustang by Henrique C. Alves (hcarvalhoalves@gmail.com)
 
+name: "sourcerer"
+
 colors:
     primary:    "blue"
     secondary:  "green"

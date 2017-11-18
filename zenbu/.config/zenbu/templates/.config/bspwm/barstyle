@@ -1,0 +1,7 @@
+FONT="{{ font }}"
+FONT_SIZE={{ fontsize }}"
+COLOR_FG="{{ fgc }}"
+COLOR_BG="{{ bgc }}"
+COLOR_PRIMARY="{{ b_primary }}"
+COLOR_SECONDARY="{{ b_secondary }}"
+COLOR_TERTIARY="{{ n_white }}"

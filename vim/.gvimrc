@@ -22,6 +22,7 @@ set guioptions=egmt
 set bg=dark
 colorscheme hybrid
 set guifont=Source\ Code\ Pro\ Medium\ 9
+set guifont=xos4\ Terminus\ 12
 set fillchars=vert:│
 
 " Airline

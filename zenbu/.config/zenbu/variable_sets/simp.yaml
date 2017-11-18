@@ -1,5 +1,7 @@
-# Scheme:   simp 
-# Author:   Samuel Volk
+# Scheme: simp 
+# Author: Samuel Volk
+
+name: "simp"
 
 colors:
   primary:      "green"

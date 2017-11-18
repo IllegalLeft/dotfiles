@@ -1,5 +1,6 @@
 # Scheme: Hotline
-#
+
+name: "hotline"
 
 colors:
     primary:    "yellow"

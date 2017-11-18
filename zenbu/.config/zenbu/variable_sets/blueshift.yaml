@@ -1,5 +1,7 @@
-# Scheme:   Blueshift
-# Author:   Samuel Volk
+# Scheme: Blueshift
+# Author: Samuel Volk
+
+name: "blueshift"
 
 colors:
   primary:      "blue"

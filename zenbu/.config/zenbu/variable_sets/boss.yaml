@@ -1,6 +1,8 @@
-# Scheme:   Boss
-# Author:   Samuel Volk
+# Scheme: Boss
+# Author: Samuel Volk
 # based off of Boss guitar pedals
+
+name: "boss"
 
 colors:
     primary:    "black"

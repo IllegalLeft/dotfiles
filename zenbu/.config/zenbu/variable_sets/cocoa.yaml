@@ -1,5 +1,7 @@
-# Scheme:   Cocoa
-# Author:   Samuel Volk
+# Scheme: Cocoa
+# Author: Samuel Volk
+
+name: "cocoa"
 
 colors:
     primary:    "blue"

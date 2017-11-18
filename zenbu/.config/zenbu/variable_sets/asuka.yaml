@@ -1,6 +1,8 @@
-# Scheme:   Asuka
-# Author:   Samuel Volk
-# based off an Asuka Langley pic (Neon Genesis Evangelion)
+# Scheme: Asuka
+# Author: Samuel Volk
+# based off an Asuka Langley (Neon Genesis Evangelion) pic
+
+name: "asuka"
 
 colors:
     primary:    "red"

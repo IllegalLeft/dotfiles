@@ -1,5 +1,7 @@
-# Scheme:   Damp 
-# Author:   Samuel Volk
+# Scheme: Damp 
+# Author: Samuel Volk
+
+name: "damp"
 
 colors:
     primary:    "cyan"

@@ -22,14 +22,14 @@
     --fg-light: #d7d7d7; --fg-dark: #d7d7d7;
     --tab-triangle-correction: -1px;
     --tab-height: 18px; --tab-icon-size: 12px; --tab-strip-margin: -12px; --tab-overlap: -5px;
-    --tab-fonts: "Px437 IBM VGA8", "Clean", monospace,"Dejavu Sans"; --tab-font-size: 12pt;
+    --tab-fonts: "lucy tewi", "Clean", monospace,"Dejavu Sans"; --tab-font-size: 9t;
     --tab-text-align: center; /* left | center | right */
     --tab-triangle: none;  /* block | none */
 
     /* URL VARIABLES */
     --url-background: var(--bg-light); --url-color: var(--fg-dark);
     --url-height: 18px; --url-right-margin: 6px;
-    --url-fonts: "Px437 ATI 8x8", "Clean",monospace,"Dejavu Sans"; --url-font-size: 6pt;
+    --url-fonts: "lucy tewi",monospace,"Dejavu Sans"; --url-font-size: 9pt;
     --url-text-align: center; /* left | center | right */
     --url-position: absolute; /* absolute == top (under tabs) || fixed == bottom of browser */
 }
