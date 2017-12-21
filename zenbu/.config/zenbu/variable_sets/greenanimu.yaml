@@ -1,5 +1,7 @@
-# Scheme:   GreenAnimu
-# Author:   Samuel Volk
+# Scheme: GreenAnimu
+# Author: Samuel Volk
+
+name: "greenanimu"
 
 colors:
     primary:    "green"

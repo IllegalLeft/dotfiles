@@ -7,7 +7,6 @@
 !
 
 ! = UXterm =
-!
 uxterm*termName: uxterm-256color
 xterm*termName:  xterm-256color
 

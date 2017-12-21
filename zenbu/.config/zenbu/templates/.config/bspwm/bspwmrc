@@ -20,6 +20,8 @@ bspc rule -a caca\ for\ X state=floating folow=on
 ~/.fehbg &
 # hide mouse cursor
 unclutter -root &
+#start mpd
+mpd &
 
 
 # Colors

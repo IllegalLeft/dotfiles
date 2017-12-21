@@ -1,5 +1,7 @@
-# Scheme:       Coo
-# Created By:   Samuel Volk
+# Scheme: Coo
+# Author: Samuel Volk
+
+name: "coo"
 
 colors:
     primary:    "blue"

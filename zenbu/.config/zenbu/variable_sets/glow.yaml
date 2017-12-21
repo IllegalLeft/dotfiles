@@ -1,8 +1,10 @@
-# Scheme:   Glow
-# Author:   Samuel Volk
+# Scheme: Glow
+# Author: Samuel Volk
 #
 # modeled after pic of tubes glowing in dark
 # NOTE: green is orange
+
+name: "glow"
 
 colors:
   primary:      "blue"

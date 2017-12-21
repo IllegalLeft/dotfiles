@@ -1,11 +1,13 @@
-# Scheme:   GameBoy
-# Author:   Samuel Volk
+# Scheme: GameBoy
+# Author: Samuel Volk
 #
-# Real palette is something like:
+# "Real" palette is something like:
 # #0f380f
 # #306230
 # #8bac0f
 # #9bbc0f
+
+name: "gameboy"
 
 colors:
   primary:      "cyan"

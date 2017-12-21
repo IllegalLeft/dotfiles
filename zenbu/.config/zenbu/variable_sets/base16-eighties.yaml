@@ -1,4 +1,4 @@
-# Scheme:   base16-eighties
+# Scheme: base16-eighties
 # Source: https://chriskempson.github.io/base16/
 #
 # base00 #2d2d2d
@@ -17,6 +17,8 @@
 # base0D #6699cc
 # base0E #cc99cc
 # base0F #d27b53
+
+name: "base16-eighties"
 
 colors:
     primary:    "blue"

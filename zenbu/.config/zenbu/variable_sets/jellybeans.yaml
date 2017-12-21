@@ -1,5 +1,7 @@
-# Scheme:   Jellybeans
+# Scheme: Jellybeans
 # Adapted from jellybean vim colourscheme
+
+name: "jellybeans"
 
 colors:
     primary:    "blue"

@@ -1,6 +1,7 @@
 # Scheme: Blaquemagick
 # Author: Xero
-#
+
+name: "blaquemagick"
 
 colors:
     primary:    "red"

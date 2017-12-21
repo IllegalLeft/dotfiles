@@ -1,4 +1,6 @@
-# Scheme:   ucosm
+# Scheme: ucosm
+
+name: "ucosm"
 
 colors:
     primary:    "green"

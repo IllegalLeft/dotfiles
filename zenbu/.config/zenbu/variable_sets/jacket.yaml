@@ -1,0 +1,36 @@
+# Scheme: Jacket
+# Author: Samuel Volk
+
+name: "jacket"
+
+colors:
+    primary:    "yellow"
+    secondary:  "cyan"
+
+    foreground: "#ffffda"
+    background: "#2d2d2d"
+
+    black:
+        normal: "#2d2d2d"
+        bold:   "#505050"
+    red:
+        normal: "#df4b63"
+        bold:   "#ff8098"
+    green:
+        normal: "#f3dd83"
+        bold:   "#ffffb8"
+    yellow:
+        normal: "#e1a30b"
+        bold:   "#ffd840"
+    blue:
+        normal: "#cd890b"
+        bold:   "#ffbe40"
+    magenta:
+        normal: "#3f413f"
+        bold:   "#5c5c5c"
+    cyan:
+        normal: "#5d5d5d"
+        bold:   "#7f7f7f"
+    white:
+        normal: "#7f7f7f"
+        bold:   "#bfbfbf"

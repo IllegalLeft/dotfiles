@@ -1,4 +1,4 @@
-# Scheme:   base16-greyscale-light
+# Scheme: base16-greyscale-light
 # Source: https://chriskempson.github.io/base16/
 #
 # base00 #f7f7f7
@@ -18,6 +18,7 @@
 # base0E #747474
 # base0F #5e5e5e
 
+name: "base16-greyscale-light"
 
 colors:
     primary:    "red"

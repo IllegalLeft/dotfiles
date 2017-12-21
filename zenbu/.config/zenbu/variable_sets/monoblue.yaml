@@ -1,5 +1,7 @@
-# Scheme:   Monoblue 
-# Author:   Samuel Volk
+# Scheme: Monoblue 
+# Author: Samuel Volk
+
+name: "monoblue"
 
 colors:
   primary:      "blue"
