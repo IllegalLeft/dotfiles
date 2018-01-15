@@ -29,6 +29,7 @@ alias fgrep='fgrep --color=auto'
 alias tree='tree -C'
 alias mkdir='mkdir -p'
 alias pacman='pacman --color auto'
+alias QUIT='exit'
 
 # arch pkgfile command-not-found hook
 #source /usr/share/doc/pkgfile/command-not-found.zsh

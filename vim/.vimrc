@@ -84,7 +84,6 @@ set shiftround
 set ruler       " show line and column of cursor position
 set smartcase   " override ignorecase setting if pattern has uppercase chars
 set showmatch   " show matching brackets, braces, etc
-set textwidth=79    " max witdth of text that is being inserted
 set undolevels=100
 set wildmenu
 set wildmode=list:longest
