@@ -1,8 +1,8 @@
 name: "default"
 
 # Fonts
-font: "lucy tewi"
-fontsize: 8
+font: "misc fixed"
+fontsize: 9
 
 # Colors
 colors:
