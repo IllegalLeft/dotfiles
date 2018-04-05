@@ -150,7 +150,7 @@ command! DeleteTrailingWS : call DeleteTrailingWS()
 
 " Theme
 """"""""
-set fillchars=vert:\ 
+set fillchars=vert:\|
 if ($TERM == "linux")   " TTY
     color simp16
 else                    " Regular terminal

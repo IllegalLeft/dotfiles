@@ -1,128 +1,120 @@
-@font-face {
-    font-family: 'px437_ibm_vga8regular';
-    src: url('fonts/px437_ibm_vga8-webfont.woff2') format('woff2'),
-         url('fonts/px437_ibm_vga8-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'px437_ati_8x8regular';
-    src: url('fonts/px437_ati_8x8-webfont.woff2') format('woff2'),
-         url('fonts/px437_ati_8x8-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'pxplus_ibm_vga8regular';
-    src: url('fonts/pxplus_ibm_vga8-webfont.woff2') format('woff2'),
-         url('fonts/pxplus_ibm_vga8-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'px437_ati_8x16regular';
-    src: url('fonts/px437_ati_8x16-webfont.woff2') format('woff2'),
-         url('fonts/px437_ati_8x16-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+:root {
+    --bg: #222;
+    --fg: #999;
+    --header: #aaa;
+    --link: #666;
+    --linkhover: #777;
 }
 
 html, body, h1, ul, li, p {
-  margin: 0;
-  padding: 0; }
+    margin: 0;
+    padding: 0;
+}
 
 body {
-  background: #222222;
-  height: 100vh;
-  width: 100vw; }
+    background: url("acoustic.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "KFhimaji", "Roboto", "Verdana", serif;
+}
 
 main {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+    display: block;
+    background: var(--bg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 20px;
+    box-shadow: 2px 4px 15px;
+}
+a {
+    color: var(--link);
+    text-decoration: none;
+    transition: .2s;
+}
+a:hover {
+    color: var(--linkhover);
+}
 
-@media only screen and (max-height: 600px) {
-  main {
-    left: 40%;
-    transform: translate(-40%, -60%); } }
 h1 {
-  color: #a5caef;
-  font-family: "Nimbus Sans","Liberation Serif";
-  font-size: 12px;
-  font-weight: normal; 
-  margin: 15px; }
+    color: #a5caef;
+    font-size: 12px;
+    font-weight: normal; 
+    margin: 15px;
+}
 
 p {
-  color: #a5caef;
-  font-family: "Nimbus Sans", "pxplus_ibm_vga8regular","Arial";
-  font-size: 12px;
-  letter-spacing: 0px;
-  line-height: 12px; }
-
-code {
-  font-family: "Nimbus Sans", "pxplus_ibm_vga8regular","Arial";
-  font-size: 12px; }
+    color: #a5caef;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 12px;
+}
 
 ul {
-  display: block;
-  margin: 0 auto; }
+    display: block;
+    margin: 0 auto;
+}
 
 li {
-  font-family: "Nimbus Sans", "pxplus_ibm_vga8regular","Liberation Serif";
-  font-size: 12px;
-  line-height: 1.5;
-  list-style: none;
-  margin: 0 5px; }
+    font-size: 12px;
+    line-height: 1.5;
+    list-style: none;
+    margin: 0 5px;
+}
 
 .ansi {
-  color: #a5caef;
-  font-family: "xos4 Terminus", "pxplus_ibm_vga8regular", monospace;
-  font-size: 12px;
-  font-weight: normal;
-  letter-spacing: 0px;
-  line-height: 12px; }
+    color: #a5caef;
+    font-family: "pxplus_ibm_vga8regular", monospace;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 16px;
+}
 
 .boxes {
-  margin-left: 40px}
+    display: flex;
+}
 .box {
-  float: left;
-  margin: 10px;
-  transition: .2s; }
+    flex: 1 1 0;
+    float: left;
+    margin: 10px;
+    padding: 2px;
+    transition: .2s;
+}
 .box:hover {
-  background-color: #404040; }
+    background-color: #333;
+}
 
 .subh {
-  color: #c7f09f;
-  margin-top: 5px;
-  text-decoration: none;}
+    color: #bbb;
+    margin-top: 5px;
+    text-decoration: none;
+}
 
-a {
-  color: #87afd7;
-  text-decoration: none;
-  transition: .2s; }
-
-a:hover {
-  color: #e8e8d3; }
 
 .subh a {
-  color: #e8e8d3; }
+    color: #e8e8e8;
+}
 
 .subh a:hover {
-  color: #d7d7d7; }
+    color: #d7d7d7;
+}
 
 .searchfield {
-  background: #404040;
-  color: #e8e8d3;
-  border: none;
-  display: block;
-  font-family: "Nimbus Sans", "Liberation Serif",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  height: 25px;
-  margin: 10px auto;
-  padding: 5px 0 5px 10px;
-  transition: .2s;
-  width: 300px; }
+    background: #404040;
+    color: #e8e8e8;
+    border: 1px solid #222;
+    display: block;
+    font-family: "Roboto", "Liberation Serif",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    height: 25px;
+    margin: 20px auto;
+    padding: 5px 0 5px 10px;
+    transition: .2s;
+    min-width: 200px;
+    width: 80%;
+}
 
 /*# sourceMappingURL=main.css.map */
