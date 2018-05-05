@@ -1,11 +1,3 @@
-"       _
-"__   _(_)_ __ ___  _ __ ___
-"\ \ / / | '_ ` _ \| '__/ __|
-" \ V /| | | | | | | | | (__
-"(_)_/ |_|_| |_| |_|_|  \___|
-" .vimrc
-"
-
 " Plugins
 """"""""""
 if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
