@@ -1,9 +1,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# arch pkgfile command-not-found hook
-source /usr/share/doc/pkgfile/command-not-found.bash
-
 # line wrap on window resize
 shopt -s checkwinsize
 
