@@ -7,7 +7,9 @@
 "
 " By:           Samuel Volk
 " Last Edited:  March 27, 2017
-" Description:  Simple 16 color scheme with very little highlighting.
+" Description:  Simple 16 colour scheme with very little highlighting. Used for
+"               terminals that already have the first sixteen colours set to
+"               custom colours. Not meant for GVim.
 "
 
 hi clear
