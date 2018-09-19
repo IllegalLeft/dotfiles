@@ -4,6 +4,7 @@
 "\__ \ | | | | | | |_) | | (_) |
 "|___/_|_| |_| |_| .__/|_|\___/
 " simp16         |_|
+"
 " By:           Samuel Volk
 " Last Edited:  March 27, 2017
 " Description:  Simple 16 color scheme with very little highlighting.
