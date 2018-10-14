@@ -23,8 +23,8 @@ colors:
         normal: "#cf8032"
         bold:   "#f2e2a1"
     blue:
-        normal: "#676b78"
-        bold:   "#9295a3"
+        normal: "#525b78"
+        bold:   "#7f85a3"
     magenta:
         normal: "#b76d85"
         bold:   "#d19ecf"
