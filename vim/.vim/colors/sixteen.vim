@@ -42,7 +42,7 @@ hi DiffText     ctermfg=Blue        ctermbg=NONE
 hi Folded       cterm=NONE      ctermfg=LightGrey   ctermbg=DarkGrey
 hi FoldColumn   cterm=NONE      ctermfg=LightGrey   ctermbg=DarkGrey
 " Searching
-hi Search       ctermfg=Black       ctermbg=DarkYellow
+hi Search       ctermfg=Black       ctermbg=Yellow
 hi IncSearch    ctermfg=NONE        ctermbg=NONE
 " Statusline
 hi StatusLine   cterm=NONE      ctermfg=Black       ctermbg=White
@@ -98,7 +98,7 @@ hi DiffText     guifg=Blue        guibg=NONE
 hi Folded       gui=NONE      guifg=LightGrey   guibg=DarkGrey
 hi FoldColumn   gui=NONE      guifg=LightGrey   guibg=DarkGrey
 " Searching
-hi Search       guifg=Black       guibg=DarkYellow
+hi Search       guifg=Black       guibg=Yellow
 hi IncSearch    guifg=NONE        guibg=NONE
 " Statusline
 hi StatusLine   gui=NONE      guifg=Black       guibg=White
