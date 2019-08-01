@@ -24,30 +24,30 @@ colors:
     primary:    "green"
     secondary:  "magenta"
 
-    foreground: "#7f8d95"
-    background: "#1f251b"
+    foreground: "#778a95"
+    background: "#171d13"
 
     black:
-        normal: "#1f251b"
-        bold:   "#43495b"
+        normal: "#171d13"
+        bold:   "#4f525b"
     red:
         normal: "#41614d"
-        bold:   "#41614d"
+        bold:   "#4e8f67"
     green:
         normal: "#37755b"
-        bold:   "#37755b"
+        bold:   "#4a9d7a"
     yellow:
-        normal: "#599b6b"
-        bold:   "#599b6b"
+        normal: "#549366"
+        bold:   "#63ca80"
     blue:
-        normal: "#93c3bb"
-        bold:   "#93c3bb"
+        normal: "#57948a"
+        bold:   "#62c3b3"
     magenta:
-        normal: "#89abc9"
-        bold:   "#89abc9"
+        normal: "#6386a6"
+        bold:   "#70a2ce"
     cyan:
-        normal: "#6575b5"
-        bold:   "#6575b5"
+        normal: "#4c5a95"
+        bold:   "#748bd0"
     white:
-        normal: "#7f8d95"
-        bold:   "#a4b2c8"
+        normal: "#778a95"
+        bold:   "#9cafce"

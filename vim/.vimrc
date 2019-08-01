@@ -5,22 +5,23 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     " set the runtime path to include Vundle and initialize
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
-    Plugin 'gmarik/Vundle.vim'  " Let vundle manage itself
+    Plugin 'Vundlevim/Vundle.vim'               " Let vundle manage itself
     " Functionality
-    "Plugin 'tpope/vim-fugitive'		        " git commands inside vim
-    Plugin 'scrooloose/nerdtree'	        " filebrowser
-    Plugin 'ctrlpvim/ctrlp.vim'             " fuzzy search
+    "Plugin 'tpope/vim-fugitive'                " git commands inside vim
+    Plugin 'scrooloose/nerdtree'                " filebrowser
+    Plugin 'ctrlpvim/ctrlp.vim'                 " fuzzy search
     " Syntax
-    Plugin 'zaiste/tmux.vim'                " tmux syntax
+    Plugin 'zaiste/tmux.vim'
+    Plugin 'IllegalLeft/wla-vim'
     " Cosmetic
-    "Plugin 'flazz/vim-colorschemes'         " colorschemes
-    "Plugin 'mhinz/vim-startify'             " start page
-    "Plugin 'vim-airline/vim-airline'        " status line
+    "Plugin 'flazz/vim-colorschemes'
+    "Plugin 'mhinz/vim-startify'
+    "Plugin 'vim-airline/vim-airline'
     "Plugin 'vim-airline/vim-airline-themes'
     " Colorschemes
     Plugin 'andreasvc/vim-256noir'
     Plugin 'romainl/Apprentice'
-    Plugin 'sjl/badwolf'                    " badwolf & goodwolf
+    Plugin 'sjl/badwolf'                        " badwolf & goodwolf
     Plugin 'xero/blaquemagick.vim'
     Plugin 'marciomazza/vim-brogrammer-theme'
     Plugin 'zefei/cake16'
@@ -29,6 +30,7 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     Plugin 'fcpg/vim-fahrenheit'
     Plugin 'morhetz/gruvbox'
     Plugin 'noahfrederick/vim-hemisu'
+    Plugin 'IllegalLeft/honeywell.vim'
     Plugin 'w0ng/vim-hybrid'
     Plugin 'nanotech/jellybeans.vim'
     Plugin 'sickill/vim-monokai'

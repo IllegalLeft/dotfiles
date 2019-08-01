@@ -1,9 +1,14 @@
-rofi.bw: 1
+rofi.bw: 3
+rofi.padding: 12
+rofi.separator-style: none
+rofi.scrollbar-width: 15
+rofi.lines: 8
+
 rofi.font:  {{ font }} {{ fontsize }}
 
 !! COLORS
 rofi.color-window: {{ bgc }}, {{ n_primary }}
 ! State             bg          fg          bgalt       hlbg            hlfg
-rofi.color-normal: {{ bgc }}, {{ fgc }}, {{ bgc }}, {{ b_primary }}, {{ bgc }}
-rofi.color-urgent: {{ bgc }}, {{ fgc }}, {{ bgc }}, {{ b_primary }}, {{ bgc }}
-rofi.color-active: {{ bgc }}, {{ fgc }}, {{ bgc }}, {{ b_primary }}, {{ bgc }}
+rofi.color-normal: {{ bgc }}, {{ fgc }}, {{ bgc }}, {{ bgc }}, {{ b_primary }}
+rofi.color-urgent: {{ bgc }}, {{ fgc }}, {{ bgc }}, {{ bgc }}, {{ b_primary }}
+rofi.color-active: {{ bgc }}, {{ fgc }}, {{ bgc }}, {{ bgc }}, {{ b_primary }}
