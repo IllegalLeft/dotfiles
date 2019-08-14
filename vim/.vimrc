@@ -5,12 +5,13 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     " set the runtime path to include Vundle and initialize
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
-    Plugin 'Vundlevim/Vundle.vim'               " Let vundle manage itself
+    Plugin 'VundleVim/Vundle.vim'               " Let vundle manage itself
     " Functionality
     "Plugin 'tpope/vim-fugitive'                " git commands inside vim
     Plugin 'scrooloose/nerdtree'                " filebrowser
     Plugin 'ctrlpvim/ctrlp.vim'                 " fuzzy search
     " Syntax
+    Plugin 'sudar/vim-arduino-syntax'
     Plugin 'zaiste/tmux.vim'
     Plugin 'IllegalLeft/wla-vim'
     " Cosmetic
