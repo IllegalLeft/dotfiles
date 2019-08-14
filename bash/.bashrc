@@ -25,7 +25,7 @@ alias QUIT='exit'
 PS1='[\[\e[1;32m\]\u\[\e[0m\]@\[\e[0;32m\]\h \[\e[1;32m\]\W\[\e[0m\]]\$ '
 
 # PATH
-export PATH="${PATH}:/home/sam/.scripts"
+export PATH="${PATH}:/home/sam/bin"
 export PATH="${PATH}:/home/sam/games/"
 
 # devkit

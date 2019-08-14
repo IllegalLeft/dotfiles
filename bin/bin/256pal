@@ -54,4 +54,4 @@ printf "\e[30m" # black fg
 for i in {232..255}; do
     printf "\e[48;5;${i}m%*u" 4 "${i}"
 done
-printf "\n"
+printf "\e[0m\n"
