@@ -2,5 +2,5 @@
 
 if [ -e ~/.fehbg ]
 then
-    cat ~/.fehbg | sed -n "s/^.*'\(.*\)'.*$/\1/p"
+    sed -n "s/^.*'\(.*\)'.*$/\1/p" ~/.fehbg
 fi

@@ -5,8 +5,8 @@ DIR_FONTS="$DIR_THEMES/fonts"
 FILE_THKEMER="$HOME/.thkemer"
 
 # figure out current theme & font from .thkemer file
-CURRENT_FONT=$(cat $FILE_THKEMER | sed -n 's/^font=\(.*\)$/\1/p')
-CURRENT_THEME=$(cat $FILE_THKEMER | sed -n 's/^theme=\(.*\)$/\1/p')
+CURRENT_FONT=$(sed -n 's/^font=\(.*\)$/\1/p' $FILE_THKEMER)
+CURRENT_THEME=$(sed -n 's/^theme=\(.*\)$/\1/p' $FILE_THKEMER)
 
 NEW_FONT=
 NEW_THEME=
