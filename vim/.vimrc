@@ -17,8 +17,8 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     " Cosmetic
     "Plugin 'flazz/vim-colorschemes'
     "Plugin 'mhinz/vim-startify'
-    "Plugin 'vim-airline/vim-airline'
-    "Plugin 'vim-airline/vim-airline-themes'
+    Plugin 'vim-airline/vim-airline'
+    Plugin 'vim-airline/vim-airline-themes'
     " Colorschemes
     Plugin 'andreasvc/vim-256noir'
     Plugin 'romainl/Apprentice'
@@ -57,7 +57,7 @@ endif
 "autocmd! bufwritepost .vimrc source %  " Auto reload of .vimrc file
 set autoread    " read file if changed outside of vim
 set belloff=esc " get rid of that bell when I accidentally press esc too much
-set laststatus=1    " statusbar when there are two windows
+set laststatus=2    " statusbar when there are two windows
 set lazyredraw  " screen will not redraw during macros, registers and other cmds
 let mapleader=","
 set ttyfast     " fast terminal connection
