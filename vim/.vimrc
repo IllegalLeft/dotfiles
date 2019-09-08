@@ -72,7 +72,7 @@ set history=200
 set hlsearch    " highlight search results
 set incsearch   " Search while being typed out
 set ignorecase  " ignore case in search patterns
-set mouse=nv    " mouse enabled in normal and visual mode
+set mouse=a     " mouse enabled in normal and visual mode
 set softtabstop=4
 set shiftwidth=4
 set shiftround
