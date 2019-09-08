@@ -14,6 +14,7 @@ shopt -s checkwinsize
 # Aliases
 alias ex='vim -e'
 alias view='vim -R'
+alias info='info --vi-keys'
 # color aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
