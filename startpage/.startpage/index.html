@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <main>
+    <main id="main">
       <div class="boxes">
       <div class="box">
         <li class="subh"><a href="http://ansiart.com/">8bitmush</a></li>
@@ -30,14 +30,54 @@
       </div>
       <div class="box">
         <li class="subh">Media</li>
+        <li><a href="https://16colo.rs">16colours</a></li>
         <li><a href="http://imgur.com">imgur</a></li>
         <li><a href="http://safebooru.org">safebooru</a></li>
         <li><a href="http://soundcloud.com">soundcloud</a></li>
+        <li><a href="https://twitch.com">twitch</a></li>
         <li><a href="https://youtube.com">youtube</a></li>
       </div>
       </div>
+      <!--
       <input type="text" class="searchfield" autofocus placeholder=". . ." />
+      -->
     </main>
+    <script type="text/javascript">
+        var colors = [
+            "aquamarine",
+            "chartreuse",
+            "crimson",
+            "darkorange",
+            "darkorchid",
+            "deeppink",
+            "deepskyblue",
+            "dodgerblue",
+            "gold",
+            "hotpink",
+            "khaki",
+            "lightcoral",
+            "lightsalmon",
+            "lightseagreen",
+            "lightslategray",
+            "mediumseagreen",
+            "navajowhite",
+            "olivedrab",
+            "palegreen",
+            "red",
+            "royalblue",
+            "silver",
+            "springgreen",
+            "turquoise",
+            "yellow",
+            "yellowgreen"
+            ];
+        function getBackgroundColor() {
+            var ran = Math.floor(Math.random() * colors.length);
+            return colors[ran];
+        }
+        document.getElementById("main").style.background = getBackgroundColor();
+    </script>
+    <!--
     <script>
       document.getElementsByClassName('searchfield')[0].onkeypress = function (e) {
         if (!e) e = window.event;
@@ -47,5 +87,6 @@
         }
       };
     </script>
+    -->
   </body>
 </html>
