@@ -26,8 +26,8 @@ syn keyword mushcodeCommand     who, where, face, score
 " sorted alphabetically
 " dist2d, dist3d
 syn keyword mushcodeFunction    @@ abs acos add after alphamax alphamin and
-syn keyword mushcodeFunction    andflags ansi aposs art asc asin atan 
-syn keyword mushcodeFunction    atrlock bakerdays band bargraph 
+syn keyword mushcodeFunction    andflags ansi aposs art asc asin atan
+syn keyword mushcodeFunction    atrlock bakerdays band bargraph
 syn keyword mushcodeFunction    bargraphbottomlabel bargraphleftlabel
 syn keyword mushcodeFunction    baseconv before bnand bnot bodybuild bor
 syn keyword mushcodeFunction    boughtproduct bound box brackets bxor c cand
@@ -41,7 +41,7 @@ syn keyword mushcodeFunction    convutcsecs cook cor cos create createmaze
 syn keyword mushcodeFunction    ctime ctitle ctrailer cwho darttime debt dec
 syn keyword mushcodeFunction    decompose decrypt default delete deletepicture
 syn keyword mushcodeFunction    detailbar die dig div doing drawmaze
-syn keyword mushcodeFunction    drawwireframe e edefault edit element 
+syn keyword mushcodeFunction    drawwireframe e edefault edit element
 syn keyword mushcodeFunction    elements ellipsecoords elock emit employees
 syn keyword mushcodeFunction    encrypt entrances eq escape etimefmt eval
 syn keyword mushcodeFunction    exit exp exploredroom extract fansitoansi
@@ -50,7 +50,7 @@ syn keyword mushcodeFunction    fbcreate fbdestroy fbdump fbflush fbhget
 syn keyword mushcodeFunction    fbhset fblist fbsave fbscaleto fbstats
 syn keyword mushcodeFunction    fbwrite fdiv filter filterbool findable first
 syn keyword mushcodeFunction    flags floor floordiv fmod fold followers
-syn keyword mushcodeFunction    foreach fullbar fullname get get_eval 
+syn keyword mushcodeFunction    foreach fullbar fullname get get_eval
 syn keyword mushcodeFunction    getaddressroom getpicturesecurity grab graball
 syn keyword mushcodeFunction    gradient grep grepi gt gte halfbar hasattr
 syn keyword mushcodeFunction    hasattrp hasattrpval hasattrval hasflag
@@ -59,15 +59,15 @@ syn keyword mushcodeFunction    ibreak idle if ilev inc index insert inum
 syn keyword mushcodeFunction    invested investors isbaker isdarted
 syn keyword mushcodeFunction    isdaylight isdbref isint isletters isnewbie
 syn keyword mushcodeFunction    isnum isword itemize items iter itext lambda
-syn keyword mushcodeFunction    last latestproductssold lattr lcon lcstr 
+syn keyword mushcodeFunction    last latestproductssold lattr lcon lcstr
 syn keyword mushcodeFunction    ldelete left lemit lerp lerpi lexits
 syn keyword mushcodeFunction    linecoords link listpictures listpropertycomm
 syn keyword mushcodeFunction    listpropertyres lit ljust lmath ln lnum
 syn keyword mushcodeFunction    lobjects loc localize locate lock log lotowner
-syn keyword mushcodeFunction    lotrating lotratingcount lotvalue lparent 
+syn keyword mushcodeFunction    lotrating lotratingcount lotvalue lparent
 syn keyword mushcodeFunction    lplayers lsearch lsearchr lstats lt lte lthings
 syn keyword mushcodeFunction    lvexits lvobjects lvplayers lvthings map match
-syn keyword mushcodeFunction    matchall max mean median member merge mid min 
+syn keyword mushcodeFunction    matchall max mean median member merge mid min
 syn keyword mushcodeFunction    mix mod modulo money msecs mtime mul munge name
 syn keyword mushcodeFunction    nameshort nand nattr nearby neq newswrap next
 syn keyword mushcodeFunction    nlsearch noise nor not null num numsuffix obj

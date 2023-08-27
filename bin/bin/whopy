@@ -63,7 +63,7 @@ def timeconv(seconds):
     elif not (tstruct[5]-1) <= 0:
         return str(tstruct[5]) + 's'
     return '0s'
-	
+
 
 # Retrieve HTML
 response = urllib.request.urlopen('http://www.ansiart.com/Info/Who')
@@ -73,7 +73,7 @@ matchobj = re.search('data-code="(.*?)">', htmldata, re.DOTALL)
 data = matchobj.group(1)
 
 # Handle some HTML crap
-# 
+#
 # For some reason, &#8250; changes into the cent character on the actual page
 # but not here so it is manual replaced before.
 data = re.sub('&amp;#8250;', u'\u00A2', data)
@@ -83,7 +83,7 @@ data = h.unescape(data)
 data = h.unescape(data) # two times for good measure!
 data = re.sub('</*span.*?>', '', data)    #span tags suck
 
-	
+
 # Replace delimeters and format into an array
 data = data.split('\n')
 for i, item in enumerate(data):
