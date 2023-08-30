@@ -163,10 +163,25 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 
 " Airline
 "let g:airline_theme = "minimalist"
-let g:airline#extensions#keymap#enabled = 0
-let g:airline_symbols_ascii = 1
+"let g:airline_symbols_ascii = 1
+" because for some reason, the powerline fonts setting affects whitespace in
+" the buffer extension, we want to pretend to use powerline fonts...
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+" ...but not /really/ use powerline fonts
+" ASCII is best
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_symbols.colnr = ' '
+let g:airline_symbols.linenr = ' '
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.paste = 'p'
+let g:airline_symbols.notexists = '?'
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#right_sep = ''
