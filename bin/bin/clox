@@ -1,3 +1,0 @@
-#!/bin/sh
-
-cacaclock -f /usr/share/figlet/fonts/script

@@ -1,4 +1,0 @@
-#!/bin/bash
-# curl command to fetch a random ansi
-
-curl -L https://textmode.cc/dispenser
