@@ -19,7 +19,7 @@ pacman -S stow
 
 3. Navigate to the repo: `cd dotfiles`
 
-4. Install specific configs you desire with stow: `stow -t ~ vim`
+4. Install specific configs you desire with stow to the home directory: `stow -t ~ vim`
 
 ### Manual Install
 
@@ -27,7 +27,7 @@ pacman -S stow
 
 2. Navigate to the repo: `cd dotfiles`
 
-3. opy specific configs to your home directory.
+3. Copy specific configs to your home directory.
 
 
 ## Contents
