@@ -5,7 +5,7 @@
 # Samuel Volk, 2016
 
 # foreground
-printf '\033]10;#ffffff\007'
+printf '\033]10;#e5e5e5\007'
 # background
 printf '\033]11;#000000\007'
 
