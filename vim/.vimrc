@@ -24,6 +24,7 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     " Colorschemes
     Plugin 'andreasvc/vim-256noir'
     Plugin 'romainl/Apprentice'
+    Plugin 'huyvohcmc/atlas.vim'
     Plugin 'sjl/badwolf'                        " badwolf & goodwolf
     Plugin 'xero/blaquemagick.vim'
     Plugin 'marciomazza/vim-brogrammer-theme'
@@ -139,7 +140,7 @@ command! DeleteTrailingWS : call DeleteTrailingWS()
 
 " Theme
 """"""""
-set fillchars=vert:\|
+set fillchars=vert:\|   " vsplit separater character
 if ($TERM == "linux")   " TTY
     colorscheme simp16
 else                    " Regular terminal
@@ -160,29 +161,18 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 " MUSHcode syntax
 "au BufRead,BufNewFile *.mush set filetype=mushcode
 
+" NERDTree
+"""""""""""
+let g:NERDTreeDirArrowExpandable = '>'
+let g:NERDTreeDirArrowCollapsible = 'V'
 
 " Airline
-"let g:airline_theme = "minimalist"
-"let g:airline_symbols_ascii = 1
-" because for some reason, the powerline fonts setting affects whitespace in
-" the buffer extension, we want to pretend to use powerline fonts...
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
+""""""""""
+if filereadable(expand("~/.vim/bundle/vim-airline/plugin/airline.vim"))
+    set noshowmode          " airline will handle showing the mode
+
+    "let g:airline_theme = "minimalist"
+    let g:airline_symbols_ascii = 1
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#formatter = 'unique_tail'
 endif
-" ...but not /really/ use powerline fonts
-" ASCII is best
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
-let g:airline_symbols.colnr = ' '
-let g:airline_symbols.linenr = ' '
-let g:airline_symbols.maxlinenr = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.paste = 'p'
-let g:airline_symbols.notexists = '?'
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#right_sep = ''
-let g:airline#extensions#tabline#right_alt_sep = ''
