@@ -35,7 +35,7 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     Plugin 'w0ng/vim-hybrid'
     Plugin 'nanotech/jellybeans.vim'
     Plugin 'lighthaus-theme/vim-lighthaus'
-    Plugin 'sickill/vim-monokai'
+    Plugin 'ku1ik/vim-monokai'
     Plugin 'owickstrom/vim-colors-paramount'
     Plugin 'ikaros/smpl-vim'
     Plugin 'daddye/soda.vim'
@@ -64,6 +64,7 @@ set ttimeoutlen=100
 " Editing
 """"""""""
 set autoindent
+set cursorline      " highlight current line
 set expandtab       " expand tabs into spaces
 set hidden          " buffer becomes hidden when abandoned
 set history=500
@@ -72,6 +73,7 @@ set incsearch       " Search while being typed out
 set ignorecase      " ignore case in search patterns
 set mouse=a         " mouse enabled in normal and visual mode
 set nrformats-=octal "removes octal from # formats to inc/dec ('0' prefix)
+set scrolloff=3     " cursor moves edge of screen when this many lines away
 set softtabstop=4
 set shiftwidth=4
 set shiftround
@@ -145,7 +147,7 @@ if ($TERM == "linux")   " TTY
     colorscheme simp16
 else                    " Regular terminal
     set bg=dark
-    colorscheme tender
+    colorscheme jellybeans
 endif
 highlight ColorColumn ctermbg=DarkGrey
 
