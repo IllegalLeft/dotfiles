@@ -35,6 +35,7 @@ if filereadable(expand("~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
     Plugin 'w0ng/vim-hybrid'
     Plugin 'nanotech/jellybeans.vim'
     Plugin 'lighthaus-theme/vim-lighthaus'
+    Plugin 'cccfire/vim-miku-colors'
     Plugin 'ku1ik/vim-monokai'
     Plugin 'owickstrom/vim-colors-paramount'
     Plugin 'ikaros/smpl-vim'
